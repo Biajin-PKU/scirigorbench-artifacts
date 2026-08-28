@@ -1,0 +1,242 @@
+[
+ {
+  "offset": 80,
+  "key": "results.json.summary[XES3G5M|chronological|UC-DGRec|risk80].n",
+  "value": 5.0,
+  "type": "split"
+ },
+ {
+  "offset": 125,
+  "key": "seed_metrics.csv[OULAD|entity_disjoint|UC-DGRec|risk80_coverage].value",
+  "value": 0.7936507937,
+  "type": "seeds"
+ },
+ {
+  "offset": 179,
+  "key": "results.json.summary[EdNet-KT1|cold_start|Hard-DGRec|risk80].ci95_hi",
+  "value": 0.8958333333,
+  "type": "stat_test"
+ },
+ {
+  "offset": 233,
+  "key": "results.json.summary[XES3G5M|cold_start|UC-DGRec|recall10].n",
+  "value": 5.0,
+  "type": "metric"
+ },
+ {
+  "offset": 278,
+  "key": "seed_metrics.csv[EdNet-KT1|chronological|DKVMN|ece].value",
+  "value": 0.0016835107,
+  "type": "metric"
+ },
+ {
+  "offset": 332,
+  "key": "results.json.summary[MOOCCubeX|chronological|Hard-DGRec|risk80_coverage].ci95_lo",
+  "value": 0.8020833333,
+  "type": "stat_test"
+ },
+ {
+  "offset": 386,
+  "key": "results.json.summary[OULAD|cold_start|DKVMN|recall10].ci95_lo",
+  "value": 0.8857142857,
+  "type": "metric"
+ },
+ {
+  "offset": 440,
+  "key": "ablation_metrics.csv[Hard edges|ndcg10].value",
+  "value": 0.4877550769,
+  "type": "metric"
+ },
+ {
+  "offset": 494,
+  "key": "results.json.summary[XES3G5M|chronological|KGAT|ece].sd",
+  "value": 0.0054812064236768624,
+  "type": "metric"
+ },
+ {
+  "offset": 557,
+  "key": "seed_metrics.csv[EdNet-KT1|entity_disjoint|UC-DGRec|risk80_coverage].seed",
+  "value": 205759.0,
+  "type": "seeds"
+ },
+ {
+  "offset": 607,
+  "key": "results.json.summary[OULAD|chronological|KGAT|risk80_coverage].mean",
+  "value": 0.8020833333,
+  "type": "split"
+ },
+ {
+  "offset": 661,
+  "key": "results.json.paired_differences[EdNet-KT1|entity_disjoint|ece].ci95_lo",
+  "value": -0.006277694363246831,
+  "type": "metric"
+ },
+ {
+  "offset": 724,
+  "key": "results.json.summary[OULAD|cold_start|DKVMN|ndcg10].sd",
+  "value": 0.0,
+  "type": "metric"
+ },
+ {
+  "offset": 769,
+  "key": "results.json.summary[XES3G5M|chronological|LightGCN|risk80_coverage].n",
+  "value": 5.0,
+  "type": "split"
+ },
+ {
+  "offset": 814,
+  "key": "seed_metrics.csv[EdNet-KT1|chronological|LightGCN|violation_rate].seed",
+  "value": 205759.0,
+  "type": "seeds"
+ },
+ {
+  "offset": 864,
+  "key": "results.json.summary[MOOCCubeX|chronological|UC-DGRec|ndcg10].mean",
+  "value": 0.5046357779,
+  "type": "metric"
+ },
+ {
+  "offset": 918,
+  "key": "results.json.summary[EdNet-KT1|entity_disjoint|DGEKT|violation_rate].n",
+  "value": 5.0,
+  "type": "hyperparam"
+ },
+ {
+  "offset": 963,
+  "key": "results.json.summary[MOOCCubeX|chronological|KGAT|ndcg10].ci95_lo",
+  "value": 0.456336004284212,
+  "type": "metric"
+ },
+ {
+  "offset": 1022,
+  "key": "results.json.summary[EdNet-KT1|cold_start|UC-DGRec|risk80].ci95_hi",
+  "value": 0.8125,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1070,
+  "key": "results.json.paired_differences[EdNet-KT1|chronological|ece].ci95_lo",
+  "value": -0.004484280221591301,
+  "type": "metric"
+ },
+ {
+  "offset": 1133,
+  "key": "seed_metrics.csv[EdNet-KT1|entity_disjoint|LightGCN|violation_rate].value",
+  "value": 0.0784313725,
+  "type": "seeds"
+ },
+ {
+  "offset": 1187,
+  "key": "results.json.summary[MOOCCubeX|chronological|DGEKT|ece].ci95_hi",
+  "value": 0.003409802480407947,
+  "type": "metric"
+ },
+ {
+  "offset": 1249,
+  "key": "results.json.paired_differences[MOOCCubeX|entity_disjoint|risk80].ci95_lo",
+  "value": 0.05677267578489182,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1310,
+  "key": "results.json.summary[XES3G5M|entity_disjoint|DGEKT|ndcg10].ci95_hi",
+  "value": 0.49072208742322804,
+  "type": "metric"
+ },
+ {
+  "offset": 1371,
+  "key": "results.json.paired_differences[MOOCCubeX|chronological|ece].ci95_lo",
+  "value": -0.0013840576966051405,
+  "type": "metric"
+ },
+ {
+  "offset": 1435,
+  "key": "results.json.summary[OULAD|entity_disjoint|Hard-DGRec|violation_rate].ci95_hi",
+  "value": 0.0,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1480,
+  "key": "results.json.summary[EdNet-KT1|entity_disjoint|DKVMN|risk80_coverage].ci95_hi",
+  "value": 0.7973856209,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1534,
+  "key": "seed_metrics.csv[MOOCCubeX|cold_start|DGEKT|risk80_coverage].value",
+  "value": 0.8,
+  "type": "seeds"
+ },
+ {
+  "offset": 1579,
+  "key": "seed_metrics.csv[OULAD|cold_start|DGEKT|violation_rate].value",
+  "value": 0.1142857143,
+  "type": "seeds"
+ },
+ {
+  "offset": 1633,
+  "key": "seed_metrics.csv[OULAD|entity_disjoint|LightGCN|risk80].value",
+  "value": 0.88,
+  "type": "seeds"
+ },
+ {
+  "offset": 1679,
+  "key": "results.json.summary[OULAD|cold_start|KGAT|risk80_coverage].ci95_lo",
+  "value": 0.8,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1724,
+  "key": "results.json.summary[XES3G5M|cold_start|DGEKT|violation_rate].n",
+  "value": 5.0,
+  "type": "hyperparam"
+ },
+ {
+  "offset": 1769,
+  "key": "seed_metrics.csv[EdNet-KT1|cold_start|KGAT|recall10].seed",
+  "value": 205759.0,
+  "type": "metric"
+ },
+ {
+  "offset": 1819,
+  "key": "results.json.summary[XES3G5M|cold_start|DKVMN|violation_rate].ci95_hi",
+  "value": 0.0866666667,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1873,
+  "key": "seed_metrics.csv[XES3G5M|cold_start|UC-DGRec|ece].value",
+  "value": 0.0012151888,
+  "type": "metric"
+ },
+ {
+  "offset": 1927,
+  "key": "results.json.summary[OULAD|cold_start|Hard-DGRec|violation_rate].sd",
+  "value": 0.0,
+  "type": "stat_test"
+ },
+ {
+  "offset": 1972,
+  "key": "results.json.paired_differences[EdNet-KT1|entity_disjoint|ndcg10].n_pairs",
+  "value": 5.0,
+  "type": "metric"
+ },
+ {
+  "offset": 2017,
+  "key": "results.json.summary[MOOCCubeX|cold_start|LightGCN|violation_rate].n",
+  "value": 5.0,
+  "type": "hyperparam"
+ },
+ {
+  "offset": 2062,
+  "key": "seed_metrics.csv[EdNet-KT1|chronological|UC-DGRec|ndcg10].value",
+  "value": 0.4877521384,
+  "type": "metric"
+ },
+ {
+  "offset": 2116,
+  "key": "seed_metrics.csv[XES3G5M|chronological|DGEKT|ece].seed",
+  "value": 205759.0,
+  "type": "metric"
+ }
+]

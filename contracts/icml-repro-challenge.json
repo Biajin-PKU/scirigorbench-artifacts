@@ -1,0 +1,16 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "ICML 2026 agent reproduction challenge, community submissions (held out, never tuned against)",
+ "_provenance": "experimenter-supplied. The challenge requires participants to publish a workspace of scripts, configs, outputs and logs; the declaration names the machine-readable result files each submission actually published. Frozen before this arm was audited.",
+ "reportable_outputs": [
+  "artifacts/*.json",
+  "artifacts/*.csv",
+  "artifacts/**/*.json",
+  "artifacts/**/*.csv"
+ ],
+ "excluded_rationale": {
+  "artifacts/*.png": "figures, not machine-comparable cells",
+  "artifacts/*.md": "prose readme, not a result record",
+  "pages/**": "the claim side, not the artifact side"
+ }
+}

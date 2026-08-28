@@ -1,0 +1,19 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "development substrate 84 (in-sample)",
+ "_provenance": "experimenter-supplied; the arm ships no contract of its own. Frozen 2026-08-25 before any audit of this arm. See D3-recording-contract.md section 2.2.",
+ "reportable_outputs": [
+  "analysis_outputs/results.json",
+  "analysis_outputs/selected_hyperparameters.json",
+  "analysis_outputs/leakage_audit.json",
+  "analysis_outputs/*_metrics.csv",
+  "analysis_outputs/relation_calibration.csv",
+  "analysis_outputs/risk_coverage.csv",
+  "analysis_outputs/resource_profile.csv"
+ ],
+ "excluded_rationale": {
+  "analysis_outputs/predictions.csv": "per-instance dump keyed by query id; no sentence cites a single row",
+  "analysis_outputs/raw_interactions.*": "raw per-interaction records; not a reportable aggregate",
+  "analysis_outputs/search_trials.csv": "per-trial tuning log; the paper cites the selected config, not individual trials"
+ }
+}

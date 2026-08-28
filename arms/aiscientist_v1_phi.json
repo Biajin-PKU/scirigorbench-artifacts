@@ -1,0 +1,162 @@
+[
+ {
+  "paper": "adaptive_dual_scale_denoising",
+  "manuscript_chars": 41045,
+  "artifact_keys": 16,
+  "N": 1,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0506,
+  "not_recorded_rate": 0.9367,
+  "by_cause": {
+   "no_candidate": 74,
+   "weak_overlap": 0,
+   "ambiguous": 4
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "data_augmentation_grokking",
+  "manuscript_chars": 32441,
+  "artifact_keys": 48,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0179,
+  "not_recorded_rate": 0.9821,
+  "by_cause": {
+   "no_candidate": 55,
+   "weak_overlap": 0,
+   "ambiguous": 1
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "dual_expert_denoiser",
+  "manuscript_chars": 36084,
+  "artifact_keys": 16,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.3231,
+  "not_recorded_rate": 0.6769,
+  "by_cause": {
+   "no_candidate": 44,
+   "weak_overlap": 0,
+   "ambiguous": 21
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "gan_diffusion",
+  "manuscript_chars": 31133,
+  "artifact_keys": 16,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "by_cause": {
+   "no_candidate": 29,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "grid_based_noise_adaptation",
+  "manuscript_chars": 33846,
+  "artifact_keys": 28,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.102,
+  "not_recorded_rate": 0.898,
+  "by_cause": {
+   "no_candidate": 44,
+   "weak_overlap": 0,
+   "ambiguous": 5
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "layerwise_lr_grokking",
+  "manuscript_chars": 37919,
+  "artifact_keys": 40,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0813,
+  "not_recorded_rate": 0.9187,
+  "by_cause": {
+   "no_candidate": 113,
+   "weak_overlap": 0,
+   "ambiguous": 10
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "mdl_grokking_correlation",
+  "manuscript_chars": 33754,
+  "artifact_keys": 48,
+  "N": 12,
+  "unresolved": 0,
+  "parse_failure_rate": 0.2727,
+  "not_recorded_rate": 0.5091,
+  "by_cause": {
+   "no_candidate": 28,
+   "weak_overlap": 0,
+   "ambiguous": 15
+  },
+  "evaluable": true,
+  "universe_digest": null
+ },
+ {
+  "paper": "multi_style_adapter",
+  "manuscript_chars": 37606,
+  "artifact_keys": 36,
+  "N": 1,
+  "unresolved": 0,
+  "parse_failure_rate": 0.4789,
+  "not_recorded_rate": 0.507,
+  "by_cause": {
+   "no_candidate": 36,
+   "weak_overlap": 0,
+   "ambiguous": 34
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "rl_lr_adaptation",
+  "manuscript_chars": 28320,
+  "artifact_keys": 24,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.6216,
+  "not_recorded_rate": 0.3784,
+  "by_cause": {
+   "no_candidate": 28,
+   "weak_overlap": 0,
+   "ambiguous": 46
+  },
+  "evaluable": false,
+  "universe_digest": null
+ },
+ {
+  "paper": "weight_initialization_grokking",
+  "manuscript_chars": 37299,
+  "artifact_keys": 40,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "by_cause": {
+   "no_candidate": 90,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "evaluable": false,
+  "universe_digest": null
+ }
+]

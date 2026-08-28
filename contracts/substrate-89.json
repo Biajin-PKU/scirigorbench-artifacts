@@ -1,0 +1,27 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "development substrate 89 (in-sample)",
+ "_provenance": "experimenter-supplied; the arm ships no contract. Authored 2026-08-25 from the file listing alone (aggregate results in; per-instance dumps, figure plumbing and provenance manifests out). See D3-recording-contract.md section 2.2.",
+ "reportable_outputs": [
+  "analysis_outputs/results.json",
+  "analysis_outputs/annual_estimates.csv",
+  "analysis_outputs/cell_support.csv",
+  "analysis_outputs/heterogeneity.csv",
+  "analysis_outputs/sensitivities.csv",
+  "analysis_outputs/weighted_characteristics.csv",
+  "analysis_outputs/sample_flow.csv",
+  "analysis_outputs/design_diagnostics.json",
+  "analysis_outputs/recomputation_check.json",
+  "analysis_outputs/release_comparison.json"
+ ],
+ "excluded_rationale": {
+  "figure_source_data.csv": "per-point plot data, not a reportable aggregate",
+  "*_provenance.json": "figure provenance, not results",
+  "figure_suite_spec.json": "figure plumbing, not results",
+  "process_records.jsonl": "per-step log; no sentence cites a single record",
+  "resident_change_records.csv": "per-instance records",
+  "run_record.json": "run provenance, not results",
+  "released_artifact_manifest.json": "manifest, not results",
+  "reproduction_trace.json": "provenance trace, not results"
+ }
+}

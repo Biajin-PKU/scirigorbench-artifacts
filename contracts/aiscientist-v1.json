@@ -1,0 +1,14 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "AI Scientist v1, example_papers as released (held out, never tuned against)",
+ "_provenance": "experimenter-supplied; the arm ships no contract of its own. The declaration names the run summaries the manuscript could cite and excludes per-step logs. Frozen before this arm was audited.",
+ "reportable_outputs": [
+  "run_*/final_info.json"
+ ],
+ "excluded_rationale": {
+  "*.txt": "aider transcripts and run logs; no sentence cites a line of them",
+  "notes.txt": "the agent's own notes, not a reportable result",
+  "*.png": "figures, not machine-comparable cells",
+  "latex/*": "the claim side, not the artifact side"
+ }
+}

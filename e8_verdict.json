@@ -1,0 +1,16 @@
+{
+ "arm": "ai-scientist-v2",
+ "runs": 10,
+ "evaluable": 0,
+ "non_evaluable_fraction": 1.0,
+ "parse_failure_median": 0.9525,
+ "development_parse_failure": 0.5511,
+ "condition_2_threshold_non_evaluable": 0.3,
+ "condition_1_threshold_parse_failure": 1.1022,
+ "condition_1_reachable": false,
+ "void_conditions_fired": [
+  "2: the denominator collapsed (100% non-evaluable > 30%)"
+ ],
+ "verdict": "VOID",
+ "_note": "regenerated from the current extraction; the previous file recorded 95.92% where the arm file now gives 95.25%, and a condition-1 threshold of 114.6% derived from the coverage complement rather than from the frozen parse-failure rate"
+}

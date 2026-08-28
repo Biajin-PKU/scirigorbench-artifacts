@@ -1,0 +1,24 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "development substrate 88 (in-sample)",
+ "_provenance": "experimenter-supplied; the arm ships no contract. Authored 2026-08-25 from the file listing alone (aggregate results in; per-instance dumps, figure plumbing and provenance manifests out). See D3-recording-contract.md section 2.2. NOTE: topic 88's contract was authored AFTER a first pass under the topic-84 contract had already been run and its (invalid) numbers seen. The authoring used only the file listing, but this is not a clean pre-audit freeze and is recorded as such. Held-out arms get a strict freeze.",
+ "reportable_outputs": [
+  "analysis_outputs/results.json",
+  "analysis_outputs/aggregate_models.csv",
+  "analysis_outputs/joint_display.csv",
+  "analysis_outputs/match_balance.csv",
+  "analysis_outputs/measurement_audit.csv",
+  "analysis_outputs/resident_models.csv",
+  "analysis_outputs/sensitivity_models.csv"
+ ],
+ "excluded_rationale": {
+  "figure_source_data.csv": "per-point plot data, not a reportable aggregate",
+  "*_provenance.json": "figure provenance, not results",
+  "figure_suite_spec.json": "figure plumbing, not results",
+  "process_records.jsonl": "per-step log; no sentence cites a single record",
+  "resident_change_records.csv": "per-instance records",
+  "run_record.json": "run provenance, not results",
+  "released_artifact_manifest.json": "manifest, not results",
+  "reproduction_trace.json": "provenance trace, not results"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "model": "gpt-5.6-sol",
+ "rows": [
+  {
+   "task": "iclr2025_bi_align",
+   "ours": 0,
+   "proposed": 0,
+   "verified": 0,
+   "bad_key": 0,
+   "bad_value": 0,
+   "index_size": 1109,
+   "keys_shown": 1109
+  },
+  {
+   "task": "iclr2025_buildingtrust",
+   "ours": 2,
+   "proposed": 5,
+   "verified": 2,
+   "bad_key": 0,
+   "bad_value": 3,
+   "index_size": 335,
+   "keys_shown": 335
+  },
+  {
+   "task": "iclr2025_data_problems",
+   "ours": 5,
+   "proposed": 2,
+   "verified": 1,
+   "bad_key": 0,
+   "bad_value": 1,
+   "index_size": 334,
+   "keys_shown": 334
+  },
+  {
+   "task": "iclr2025_dl4c",
+   "ours": 2,
+   "proposed": 7,
+   "verified": 3,
+   "bad_key": 0,
+   "bad_value": 4,
+   "index_size": 229,
+   "keys_shown": 229
+  },
+  {
+   "task": "iclr2025_mldpr",
+   "ours": 3,
+   "proposed": 1,
+   "verified": 0,
+   "bad_key": 0,
+   "bad_value": 1,
+   "index_size": 729,
+   "keys_shown": 729
+  },
+  {
+   "task": "iclr2025_question",
+   "ours": 2,
+   "proposed": 7,
+   "verified": 5,
+   "bad_key": 0,
+   "bad_value": 2,
+   "index_size": 402,
+   "keys_shown": 402
+  },
+  {
+   "task": "iclr2025_scope",
+   "ours": 1,
+   "proposed": 16,
+   "verified": 5,
+   "bad_key": 0,
+   "bad_value": 11,
+   "index_size": 360,
+   "keys_shown": 360
+  },
+  {
+   "task": "iclr2025_scsl",
+   "ours": 5,
+   "proposed": 6,
+   "verified": 0,
+   "bad_key": 0,
+   "bad_value": 6,
+   "index_size": 353,
+   "keys_shown": 353
+  },
+  {
+   "task": "iclr2025_verifai",
+   "ours": 1,
+   "proposed": 2,
+   "verified": 1,
+   "bad_key": 0,
+   "bad_value": 1,
+   "index_size": 98,
+   "keys_shown": 98
+  },
+  {
+   "task": "iclr2025_wsl",
+   "ours": 1,
+   "proposed": 5,
+   "verified": 3,
+   "bad_key": 0,
+   "bad_value": 2,
+   "index_size": 282,
+   "keys_shown": 282
+  }
+ ],
+ "median_ours": 2.0,
+ "median_verified": 1.5,
+ "median_proposed": 5.0
+}

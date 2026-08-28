@@ -1,0 +1,35 @@
+{
+ "N": 159,
+ "unresolved": 213,
+ "by_cause": {
+  "no_candidate": 8,
+  "weak_overlap": 0,
+  "ambiguous": 205
+ },
+ "ours": 205,
+ "total_claims": 372,
+ "parse_failure_rate": 0.5511,
+ "not_recorded_rate": 0.0215,
+ "ambiguous_with_tie": 205,
+ "cross_record": 202,
+ "within_record": 3,
+ "cross_record_share": 0.9854,
+ "tie_sizes": {
+  "2": 49,
+  "3": 51,
+  "4": 29,
+  "6": 52,
+  "10": 3,
+  "12": 4,
+  "14": 1,
+  "18": 3,
+  "26": 2,
+  "36": 1,
+  "39": 3,
+  "76": 2,
+  "100": 1,
+  "152": 2,
+  "204": 1,
+  "326": 1
+ }
+}

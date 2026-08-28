@@ -1,0 +1,18 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "ARA (Agent-Native Research Artifacts), ARA-Labs/Agent-Native-Research-Artifact, MIT",
+ "_provenance": "experimenter-supplied, declared from the published ARA layout before any audit of this arm. Unlike the other two arms this one ships a format specification, so the declaration is a reading of that specification rather than a guess.",
+ "_independence": "A THIRD source: different authors, different capture, different release. The first two arms are two slices of one corpus (MLR-Bench) and a reviewer is entitled to count them as one.",
+ "_why_this_arm": "ARA is designed to be auditable, so it is the constructive test of the validity domain rather than another sample of the failure. logic/claims.md is an explicit claim listing -- face C of the recording contract, already implemented -- and evidence/tables/*.md records results as data. If the construction does not work here it does not work anywhere.",
+ "_claim_side": "logic/claims.md. PAPER.md is a summary carrying almost no numerals; in this format the marked claims are where the assertions live, which is the point of the format.",
+ "reportable_outputs": [
+  "evidence/tables/*.md",
+  "evidence/figures/*.md"
+ ],
+ "excluded_rationale": {
+  "logic/claims.md": "the claim side, not the artifact side",
+  "PAPER.md": "the claim side",
+  "trace/exploration_tree.yaml": "search trace, not a reportable aggregate",
+  "src/*, logic/solution/*": "design prose, no artifact-side numbers"
+ }
+}

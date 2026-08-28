@@ -1,0 +1,13 @@
+{
+ "spread_median": 2.0,
+ "spread_max": 3.5,
+ "per_axis_median_spread": {
+  "Clarity": 0.5,
+  "Novelty": 0.5,
+  "Soundness": 2.0,
+  "Significance": 2.0,
+  "Overall": 2.0
+ },
+ "best_differs": 7,
+ "tasks": 10
+}

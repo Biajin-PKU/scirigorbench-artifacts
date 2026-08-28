@@ -1,0 +1,87 @@
+{
+ "rows": [
+  {
+   "substrate": "84",
+   "N": 159,
+   "artifact_keys": 3430,
+   "manuscript_chars": 35852,
+   "numerals": 335,
+   "bind_pct": 47.5,
+   "keys_per_numeral": 10.2,
+   "containers": 11,
+   "top_container_share": 0.91
+  },
+  {
+   "substrate": "85",
+   "N": 0,
+   "artifact_keys": 1121,
+   "manuscript_chars": 38619,
+   "numerals": 429,
+   "bind_pct": 0.0,
+   "keys_per_numeral": 2.6,
+   "containers": 0,
+   "top_container_share": 0.0
+  },
+  {
+   "substrate": "86",
+   "N": 4,
+   "artifact_keys": 380,
+   "manuscript_chars": 94719,
+   "numerals": 343,
+   "bind_pct": 1.2,
+   "keys_per_numeral": 1.1,
+   "containers": 4,
+   "top_container_share": 0.25
+  },
+  {
+   "substrate": "87",
+   "N": 4,
+   "artifact_keys": 526,
+   "manuscript_chars": 50944,
+   "numerals": 172,
+   "bind_pct": 2.3,
+   "keys_per_numeral": 3.1,
+   "containers": 4,
+   "top_container_share": 0.25
+  },
+  {
+   "substrate": "88",
+   "N": 0,
+   "artifact_keys": 473,
+   "manuscript_chars": 42930,
+   "numerals": 102,
+   "bind_pct": 0.0,
+   "keys_per_numeral": 4.6,
+   "containers": 0,
+   "top_container_share": 0.0
+  },
+  {
+   "substrate": "89",
+   "N": 1,
+   "artifact_keys": 423,
+   "manuscript_chars": 34333,
+   "numerals": 150,
+   "bind_pct": 0.7,
+   "keys_per_numeral": 2.8,
+   "containers": 1,
+   "top_container_share": 1.0
+  },
+  {
+   "substrate": "90",
+   "N": 4,
+   "artifact_keys": 214,
+   "manuscript_chars": 39480,
+   "numerals": 72,
+   "bind_pct": 5.6,
+   "keys_per_numeral": 3.0,
+   "containers": 4,
+   "top_container_share": 0.25
+  }
+ ],
+ "resolving": 1,
+ "total": 7,
+ "wilson95": [
+  0.026,
+  0.513
+ ]
+}

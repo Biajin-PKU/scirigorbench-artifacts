@@ -1,0 +1,217 @@
+[
+ {
+  "task": "iclr2025_bi_align",
+  "N_before": 1,
+  "N_after": 1,
+  "patch_keys": 13,
+  "crosses": false,
+  "provenance": {
+   "final train accuracy": "endpoint of the run's own logged curve",
+   "final train loss": "endpoint of the run's own logged curve",
+   "final validation accuracy": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final test accuracy": "endpoint of the run's own logged curve",
+   "axis": "literal passed in best_solution_52de9e24521245e3bc3a8343bcc9e873.py",
+   "lr": "literal passed in best_solution_52de9e24521245e3bc3a8343bcc9e873.py",
+   "dim": "literal passed in best_solution_52de9e24521245e3bc3a8343bcc9e873.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_buildingtrust",
+  "N_before": 3,
+  "N_after": 6,
+  "patch_keys": 10,
+  "crosses": false,
+  "provenance": {
+   "final Baseline accuracy": "endpoint of the run's own logged curve",
+   "final Clarification accuracy": "endpoint of the run's own logged curve",
+   "final Average number of turns": "endpoint of the run's own logged curve",
+   "final Clarification Efficiency Score (CES)": "endpoint of the run's own logged curve",
+   "seed": "literal passed in best_solution_13c360675c004fb394eeb489454fe6e7.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_data_problems",
+  "N_before": 6,
+  "N_after": 6,
+  "patch_keys": 13,
+  "crosses": false,
+  "provenance": {
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final validation accuracy": "endpoint of the run's own logged curve",
+   "final Spearman correlation": "endpoint of the run's own logged curve",
+   "final N_meta": "endpoint of the run's own logged curve",
+   "max_features": "literal passed in best_solution_1456cfb3c61e436da46e0e7f398abc9d.py",
+   "batch_size": "literal passed in best_solution_1456cfb3c61e436da46e0e7f398abc9d.py",
+   "lr": "literal passed in best_solution_1456cfb3c61e436da46e0e7f398abc9d.py",
+   "dim": "literal passed in best_solution_1456cfb3c61e436da46e0e7f398abc9d.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_dl4c",
+  "N_before": 2,
+  "N_after": 2,
+  "patch_keys": 15,
+  "crosses": false,
+  "provenance": {
+   "final train accuracy": "endpoint of the run's own logged curve",
+   "final validation accuracy": "endpoint of the run's own logged curve",
+   "final training loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "size": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "batch_size": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "lr": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "margin": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "padding_idx": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "dim": "literal passed in best_solution_52c025f14d09471881bea2a75607be65.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_mldpr",
+  "N_before": 3,
+  "N_after": 3,
+  "patch_keys": 12,
+  "crosses": false,
+  "provenance": {
+   "final train loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final validation accuracy": "endpoint of the run's own logged curve",
+   "final discrimination score": "endpoint of the run's own logged curve",
+   "batch_size": "literal passed in best_solution_85159681bbe84bbc9bccdb7aed08ca02.py",
+   "dim": "literal passed in best_solution_85159681bbe84bbc9bccdb7aed08ca02.py",
+   "lr": "literal passed in best_solution_85159681bbe84bbc9bccdb7aed08ca02.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_question",
+  "N_before": 3,
+  "N_after": 3,
+  "patch_keys": 14,
+  "crosses": false,
+  "provenance": {
+   "final training loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final detection AUC (vote)": "endpoint of the run's own logged curve",
+   "final detection DES (vote)": "endpoint of the run's own logged curve",
+   "final detection AUC (KL-divergence)": "endpoint of the run's own logged curve",
+   "final detection DES (KL-divergence)": "endpoint of the run's own logged curve",
+   "axis": "literal passed in best_solution_22222418bfa748248fa8a1f7a2c84f16.py",
+   "num_labels": "literal passed in best_solution_22222418bfa748248fa8a1f7a2c84f16.py",
+   "minlength": "literal passed in best_solution_22222418bfa748248fa8a1f7a2c84f16.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_scope",
+  "N_before": 1,
+  "N_after": 1,
+  "patch_keys": 13,
+  "crosses": false,
+  "provenance": {
+   "final training loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final training memory retention ratio": "endpoint of the run's own logged curve",
+   "final validation memory retention ratio": "endpoint of the run's own logged curve",
+   "final training entropy-weighted memory efficiency": "endpoint of the run's own logged curve",
+   "final validation entropy-weighted memory efficiency": "endpoint of the run's own logged curve",
+   "batch_size": "literal passed in best_solution_453594005ee5410fb07369f44f04b3ae.py",
+   "dim": "literal passed in best_solution_453594005ee5410fb07369f44f04b3ae.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_scsl",
+  "N_before": 5,
+  "N_after": 6,
+  "patch_keys": 13,
+  "crosses": false,
+  "provenance": {
+   "final worst-group accuracy": "endpoint of the run's own logged curve",
+   "final average loss": "endpoint of the run's own logged curve",
+   "final test accuracy": "endpoint of the run's own logged curve",
+   "axis": "literal passed in best_solution_be4523f06c524c6bbaf8939619561351.py",
+   "batch_size": "literal passed in best_solution_be4523f06c524c6bbaf8939619561351.py",
+   "n_clusters": "literal passed in best_solution_be4523f06c524c6bbaf8939619561351.py",
+   "n_iters": "literal passed in best_solution_be4523f06c524c6bbaf8939619561351.py",
+   "minlength": "literal passed in best_solution_be4523f06c524c6bbaf8939619561351.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_verifai",
+  "N_before": 1,
+  "N_after": 1,
+  "patch_keys": 11,
+  "crosses": false,
+  "provenance": {
+   "final training loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "final training generation success rate (AICR)": "endpoint of the run's own logged curve",
+   "final validation generation success rate (AICR)": "endpoint of the run's own logged curve",
+   "emb_dim": "literal passed in best_solution_25b3437207fd4f4c8b325bcaad9504f8.py",
+   "dim": "literal passed in best_solution_25b3437207fd4f4c8b325bcaad9504f8.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ },
+ {
+  "task": "iclr2025_wsl",
+  "N_before": 1,
+  "N_after": 1,
+  "patch_keys": 11,
+  "crosses": false,
+  "provenance": {
+   "final training error": "endpoint of the run's own logged curve",
+   "final validation error": "endpoint of the run's own logged curve",
+   "final training loss": "endpoint of the run's own logged curve",
+   "final validation loss": "endpoint of the run's own logged curve",
+   "momentum": "literal passed in best_solution_2168551bfbbb4d118c9fce27ad0af6fb.py",
+   "dim": "literal passed in best_solution_2168551bfbbb4d118c9fce27ad0af6fb.py",
+   "prompt tokens": "the run's own token ledger",
+   "completion tokens": "the run's own token ledger",
+   "reasoning tokens": "the run's own token ledger",
+   "cached tokens": "the run's own token ledger",
+   "cost": "the run's own token ledger"
+  }
+ }
+]

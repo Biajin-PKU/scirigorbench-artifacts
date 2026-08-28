@@ -1,0 +1,55 @@
+[
+ {
+  "ara": "minimal-artifact",
+  "artifact_keys": 0,
+  "N": 0,
+  "unresolved": 1,
+  "by_cause": {
+   "no_candidate": 1,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false,
+  "manuscript_chars": 845
+ },
+ {
+  "ara": "resnet-ara-example",
+  "artifact_keys": 37,
+  "N": 1,
+  "unresolved": 84,
+  "by_cause": {
+   "no_candidate": 34,
+   "weak_overlap": 0,
+   "ambiguous": 50
+  },
+  "parse_failure_rate": 0.5882,
+  "not_recorded_rate": 0.4,
+  "N_by_layer": {
+   "experimental_preparation": 1
+  },
+  "universe_digest": "75bc2f209b85f2b6",
+  "evaluable": false,
+  "manuscript_chars": 8769
+ },
+ {
+  "ara": "the-ara-of-ara",
+  "artifact_keys": 0,
+  "N": 0,
+  "unresolved": 24,
+  "by_cause": {
+   "no_candidate": 24,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false,
+  "manuscript_chars": 9989
+ }
+]

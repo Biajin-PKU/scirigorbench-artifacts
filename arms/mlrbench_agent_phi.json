@@ -1,0 +1,620 @@
+[
+ {
+  "task": "iclr2025_bi_align",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 29,
+  "N": 9,
+  "unresolved": 69,
+  "by_cause": {
+   "no_candidate": 53,
+   "weak_overlap": 0,
+   "ambiguous": 16
+  },
+  "parse_failure_rate": 0.2051,
+  "not_recorded_rate": 0.6795,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_preparation": 6,
+   "experimental_execution": 2
+  },
+  "universe_digest": "d693ea5838e27281",
+  "evaluable": false,
+  "manuscript_chars": 34289
+ },
+ {
+  "task": "iclr2025_bi_align",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 28,
+  "N": 3,
+  "unresolved": 59,
+  "by_cause": {
+   "no_candidate": 51,
+   "weak_overlap": 0,
+   "ambiguous": 8
+  },
+  "parse_failure_rate": 0.129,
+  "not_recorded_rate": 0.8226,
+  "N_by_layer": {
+   "experimental_preparation": 1,
+   "experimental_execution": 2
+  },
+  "universe_digest": "e37145caecf83ada",
+  "evaluable": false,
+  "manuscript_chars": 34752
+ },
+ {
+  "task": "iclr2025_bi_align",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 28,
+  "N": 7,
+  "unresolved": 36,
+  "by_cause": {
+   "no_candidate": 33,
+   "weak_overlap": 0,
+   "ambiguous": 3
+  },
+  "parse_failure_rate": 0.0698,
+  "not_recorded_rate": 0.7674,
+  "N_by_layer": {
+   "literature_review": 2,
+   "experimental_preparation": 2,
+   "experimental_execution": 3
+  },
+  "universe_digest": "3a28d868d3fbfee8",
+  "evaluable": false,
+  "manuscript_chars": 8578
+ },
+ {
+  "task": "iclr2025_buildingtrust",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 33,
+  "N": 5,
+  "unresolved": 77,
+  "by_cause": {
+   "no_candidate": 26,
+   "weak_overlap": 0,
+   "ambiguous": 51
+  },
+  "parse_failure_rate": 0.622,
+  "not_recorded_rate": 0.3171,
+  "N_by_layer": {
+   "experimental_preparation": 3,
+   "experimental_execution": 2
+  },
+  "universe_digest": "60cd012d2750cba0",
+  "evaluable": false,
+  "manuscript_chars": 30952
+ },
+ {
+  "task": "iclr2025_buildingtrust",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 33,
+  "N": 4,
+  "unresolved": 50,
+  "by_cause": {
+   "no_candidate": 9,
+   "weak_overlap": 0,
+   "ambiguous": 41
+  },
+  "parse_failure_rate": 0.7593,
+  "not_recorded_rate": 0.1667,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_preparation": 2,
+   "experimental_execution": 1
+  },
+  "universe_digest": "cad124e9b4d0d6a4",
+  "evaluable": false,
+  "manuscript_chars": 31745
+ },
+ {
+  "task": "iclr2025_buildingtrust",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 33,
+  "N": 10,
+  "unresolved": 24,
+  "by_cause": {
+   "no_candidate": 5,
+   "weak_overlap": 0,
+   "ambiguous": 19
+  },
+  "parse_failure_rate": 0.5588,
+  "not_recorded_rate": 0.1471,
+  "N_by_layer": {
+   "experimental_preparation": 3,
+   "experimental_execution": 7
+  },
+  "universe_digest": "5145cfd358fd1025",
+  "evaluable": true,
+  "manuscript_chars": 10305
+ },
+ {
+  "task": "iclr2025_data_problems",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 39,
+  "N": 4,
+  "unresolved": 78,
+  "by_cause": {
+   "no_candidate": 26,
+   "weak_overlap": 0,
+   "ambiguous": 52
+  },
+  "parse_failure_rate": 0.6341,
+  "not_recorded_rate": 0.3171,
+  "N_by_layer": {
+   "experimental_execution": 4
+  },
+  "universe_digest": "91cc031e535007e2",
+  "evaluable": false,
+  "manuscript_chars": 19393
+ },
+ {
+  "task": "iclr2025_data_problems",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 39,
+  "N": 3,
+  "unresolved": 91,
+  "by_cause": {
+   "no_candidate": 38,
+   "weak_overlap": 0,
+   "ambiguous": 53
+  },
+  "parse_failure_rate": 0.5638,
+  "not_recorded_rate": 0.4043,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 1
+  },
+  "universe_digest": "51bab35abad77842",
+  "evaluable": false,
+  "manuscript_chars": 29005
+ },
+ {
+  "task": "iclr2025_data_problems",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 37,
+  "N": 2,
+  "unresolved": 47,
+  "by_cause": {
+   "no_candidate": 26,
+   "weak_overlap": 0,
+   "ambiguous": 21
+  },
+  "parse_failure_rate": 0.4286,
+  "not_recorded_rate": 0.5306,
+  "N_by_layer": {
+   "experimental_execution": 2
+  },
+  "universe_digest": "0ee9d942e9b9e3db",
+  "evaluable": false,
+  "manuscript_chars": 8977
+ },
+ {
+  "task": "iclr2025_dl4c",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 46,
+  "N": 2,
+  "unresolved": 105,
+  "by_cause": {
+   "no_candidate": 88,
+   "weak_overlap": 0,
+   "ambiguous": 17
+  },
+  "parse_failure_rate": 0.1589,
+  "not_recorded_rate": 0.8224,
+  "N_by_layer": {
+   "experimental_preparation": 1,
+   "experimental_execution": 1
+  },
+  "universe_digest": "45454f0b6d36806c",
+  "evaluable": false,
+  "manuscript_chars": 26624
+ },
+ {
+  "task": "iclr2025_dl4c",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 47,
+  "N": 2,
+  "unresolved": 89,
+  "by_cause": {
+   "no_candidate": 74,
+   "weak_overlap": 0,
+   "ambiguous": 15
+  },
+  "parse_failure_rate": 0.1648,
+  "not_recorded_rate": 0.8132,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_execution": 1
+  },
+  "universe_digest": "c3b8bcf9e6e9e9a0",
+  "evaluable": false,
+  "manuscript_chars": 33495
+ },
+ {
+  "task": "iclr2025_dl4c",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 46,
+  "N": 0,
+  "unresolved": 58,
+  "by_cause": {
+   "no_candidate": 55,
+   "weak_overlap": 0,
+   "ambiguous": 3
+  },
+  "parse_failure_rate": 0.0517,
+  "not_recorded_rate": 0.9483,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false,
+  "manuscript_chars": 10337
+ },
+ {
+  "task": "iclr2025_mldpr",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 85,
+  "N": 4,
+  "unresolved": 65,
+  "by_cause": {
+   "no_candidate": 34,
+   "weak_overlap": 0,
+   "ambiguous": 31
+  },
+  "parse_failure_rate": 0.4493,
+  "not_recorded_rate": 0.4928,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_preparation": 1,
+   "experimental_execution": 2
+  },
+  "universe_digest": "14572686dc736b5b",
+  "evaluable": false,
+  "manuscript_chars": 30372
+ },
+ {
+  "task": "iclr2025_mldpr",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 85,
+  "N": 3,
+  "unresolved": 59,
+  "by_cause": {
+   "no_candidate": 37,
+   "weak_overlap": 0,
+   "ambiguous": 22
+  },
+  "parse_failure_rate": 0.3548,
+  "not_recorded_rate": 0.5968,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_preparation": 2
+  },
+  "universe_digest": "c1cead5d01efee7f",
+  "evaluable": false,
+  "manuscript_chars": 34930
+ },
+ {
+  "task": "iclr2025_mldpr",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 81,
+  "N": 0,
+  "unresolved": 57,
+  "by_cause": {
+   "no_candidate": 32,
+   "weak_overlap": 0,
+   "ambiguous": 25
+  },
+  "parse_failure_rate": 0.4386,
+  "not_recorded_rate": 0.5614,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false,
+  "manuscript_chars": 11015
+ },
+ {
+  "task": "iclr2025_question",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 29,
+  "N": 1,
+  "unresolved": 60,
+  "by_cause": {
+   "no_candidate": 27,
+   "weak_overlap": 0,
+   "ambiguous": 33
+  },
+  "parse_failure_rate": 0.541,
+  "not_recorded_rate": 0.4426,
+  "N_by_layer": {
+   "experimental_execution": 1
+  },
+  "universe_digest": "bbf76d6a0dd9470e",
+  "evaluable": false,
+  "manuscript_chars": 24245
+ },
+ {
+  "task": "iclr2025_question",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 30,
+  "N": 3,
+  "unresolved": 83,
+  "by_cause": {
+   "no_candidate": 51,
+   "weak_overlap": 0,
+   "ambiguous": 32
+  },
+  "parse_failure_rate": 0.3721,
+  "not_recorded_rate": 0.593,
+  "N_by_layer": {
+   "experimental_preparation": 3
+  },
+  "universe_digest": "c3ac8fb09214efe4",
+  "evaluable": false,
+  "manuscript_chars": 29245
+ },
+ {
+  "task": "iclr2025_question",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 30,
+  "N": 1,
+  "unresolved": 52,
+  "by_cause": {
+   "no_candidate": 24,
+   "weak_overlap": 0,
+   "ambiguous": 28
+  },
+  "parse_failure_rate": 0.5283,
+  "not_recorded_rate": 0.4528,
+  "N_by_layer": {
+   "experimental_execution": 1
+  },
+  "universe_digest": "a0c0385c8de4cae1",
+  "evaluable": false,
+  "manuscript_chars": 9897
+ },
+ {
+  "task": "iclr2025_scope",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 69,
+  "N": 2,
+  "unresolved": 120,
+  "by_cause": {
+   "no_candidate": 116,
+   "weak_overlap": 0,
+   "ambiguous": 4
+  },
+  "parse_failure_rate": 0.0328,
+  "not_recorded_rate": 0.9508,
+  "N_by_layer": {
+   "experimental_preparation": 2
+  },
+  "universe_digest": "4b8a6bad6d104a9e",
+  "evaluable": false,
+  "manuscript_chars": 38939
+ },
+ {
+  "task": "iclr2025_scope",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 94,
+  "N": 2,
+  "unresolved": 98,
+  "by_cause": {
+   "no_candidate": 97,
+   "weak_overlap": 0,
+   "ambiguous": 1
+  },
+  "parse_failure_rate": 0.01,
+  "not_recorded_rate": 0.97,
+  "N_by_layer": {
+   "experimental_execution": 2
+  },
+  "universe_digest": "947cd27f6614a341",
+  "evaluable": false,
+  "manuscript_chars": 34756
+ },
+ {
+  "task": "iclr2025_scope",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 94,
+  "N": 0,
+  "unresolved": 75,
+  "by_cause": {
+   "no_candidate": 65,
+   "weak_overlap": 0,
+   "ambiguous": 10
+  },
+  "parse_failure_rate": 0.1333,
+  "not_recorded_rate": 0.8667,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false,
+  "manuscript_chars": 11729
+ },
+ {
+  "task": "iclr2025_scsl",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 56,
+  "N": 6,
+  "unresolved": 59,
+  "by_cause": {
+   "no_candidate": 17,
+   "weak_overlap": 0,
+   "ambiguous": 42
+  },
+  "parse_failure_rate": 0.6462,
+  "not_recorded_rate": 0.2615,
+  "N_by_layer": {
+   "literature_review": 1,
+   "experimental_preparation": 2,
+   "experimental_execution": 3
+  },
+  "universe_digest": "32091bbdd4efb2e3",
+  "evaluable": false,
+  "manuscript_chars": 29301
+ },
+ {
+  "task": "iclr2025_scsl",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 57,
+  "N": 5,
+  "unresolved": 46,
+  "by_cause": {
+   "no_candidate": 16,
+   "weak_overlap": 0,
+   "ambiguous": 30
+  },
+  "parse_failure_rate": 0.5882,
+  "not_recorded_rate": 0.3137,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 3
+  },
+  "universe_digest": "7bf18cbe0a7a7591",
+  "evaluable": false,
+  "manuscript_chars": 34874
+ },
+ {
+  "task": "iclr2025_scsl",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 55,
+  "N": 4,
+  "unresolved": 47,
+  "by_cause": {
+   "no_candidate": 18,
+   "weak_overlap": 0,
+   "ambiguous": 29
+  },
+  "parse_failure_rate": 0.5686,
+  "not_recorded_rate": 0.3529,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 2
+  },
+  "universe_digest": "aac961b18789229e",
+  "evaluable": false,
+  "manuscript_chars": 11176
+ },
+ {
+  "task": "iclr2025_verifai",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 23,
+  "N": 3,
+  "unresolved": 60,
+  "by_cause": {
+   "no_candidate": 54,
+   "weak_overlap": 0,
+   "ambiguous": 6
+  },
+  "parse_failure_rate": 0.0952,
+  "not_recorded_rate": 0.8571,
+  "N_by_layer": {
+   "experimental_execution": 3
+  },
+  "universe_digest": "f0310359403ea87d",
+  "evaluable": false,
+  "manuscript_chars": 25279
+ },
+ {
+  "task": "iclr2025_verifai",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 23,
+  "N": 4,
+  "unresolved": 71,
+  "by_cause": {
+   "no_candidate": 66,
+   "weak_overlap": 0,
+   "ambiguous": 5
+  },
+  "parse_failure_rate": 0.0667,
+  "not_recorded_rate": 0.88,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 2
+  },
+  "universe_digest": "6a74c27ff69f8006",
+  "evaluable": false,
+  "manuscript_chars": 27841
+ },
+ {
+  "task": "iclr2025_verifai",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 23,
+  "N": 3,
+  "unresolved": 38,
+  "by_cause": {
+   "no_candidate": 36,
+   "weak_overlap": 0,
+   "ambiguous": 2
+  },
+  "parse_failure_rate": 0.0488,
+  "not_recorded_rate": 0.878,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 1
+  },
+  "universe_digest": "c36d8ab757912ffa",
+  "evaluable": false,
+  "manuscript_chars": 9067
+ },
+ {
+  "task": "iclr2025_wsl",
+  "writer": "claude-3-7-sonnet-20250219",
+  "artifact_keys": 113,
+  "N": 5,
+  "unresolved": 93,
+  "by_cause": {
+   "no_candidate": 14,
+   "weak_overlap": 0,
+   "ambiguous": 79
+  },
+  "parse_failure_rate": 0.8061,
+  "not_recorded_rate": 0.1429,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 3
+  },
+  "universe_digest": "f6fdf87d0ba1de8e",
+  "evaluable": false,
+  "manuscript_chars": 26888
+ },
+ {
+  "task": "iclr2025_wsl",
+  "writer": "gemini-2.5-pro-preview",
+  "artifact_keys": 113,
+  "N": 5,
+  "unresolved": 99,
+  "by_cause": {
+   "no_candidate": 6,
+   "weak_overlap": 0,
+   "ambiguous": 93
+  },
+  "parse_failure_rate": 0.8942,
+  "not_recorded_rate": 0.0577,
+  "N_by_layer": {
+   "experimental_preparation": 3,
+   "experimental_execution": 2
+  },
+  "universe_digest": "6b40222eb5c6d0e4",
+  "evaluable": false,
+  "manuscript_chars": 36074
+ },
+ {
+  "task": "iclr2025_wsl",
+  "writer": "o4-mini-2025-04-16",
+  "artifact_keys": 110,
+  "N": 6,
+  "unresolved": 73,
+  "by_cause": {
+   "no_candidate": 6,
+   "weak_overlap": 0,
+   "ambiguous": 67
+  },
+  "parse_failure_rate": 0.8481,
+  "not_recorded_rate": 0.0759,
+  "N_by_layer": {
+   "experimental_preparation": 3,
+   "experimental_execution": 3
+  },
+  "universe_digest": "7f9f0b219df9ec0e",
+  "evaluable": false,
+  "manuscript_chars": 11381
+ }
+]

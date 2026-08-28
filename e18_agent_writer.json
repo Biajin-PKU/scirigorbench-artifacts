@@ -1,0 +1,85 @@
+{
+ "model": "gpt-5.6-sol",
+ "rows": [
+  {
+   "paper": "adaptive_dual_scale_denoising",
+   "released_N": 1,
+   "control": {
+    "bound": 16,
+    "prose_chars": 2835
+   },
+   "treatment": {
+    "bound": 16,
+    "proposed": 16,
+    "prose_chars": 2910
+   },
+   "index_size": 16
+  },
+  {
+   "paper": "data_augmentation_grokking",
+   "released_N": 0,
+   "control": {
+    "bound": 4,
+    "prose_chars": 4632
+   },
+   "treatment": {
+    "bound": 48,
+    "proposed": 48,
+    "prose_chars": 3441
+   },
+   "index_size": 48
+  },
+  {
+   "paper": "dual_expert_denoiser",
+   "released_N": 0,
+   "control": {},
+   "treatment": {},
+   "index_size": 16
+  },
+  {
+   "paper": "gan_diffusion",
+   "released_N": 0,
+   "control": {
+    "bound": 16,
+    "prose_chars": 2884
+   },
+   "treatment": {
+    "bound": 16,
+    "proposed": 16,
+    "prose_chars": 3004
+   },
+   "index_size": 16
+  },
+  {
+   "paper": "grid_based_noise_adaptation",
+   "released_N": 0,
+   "control": {
+    "bound": 24,
+    "prose_chars": 3083
+   },
+   "treatment": {
+    "bound": 28,
+    "proposed": 28,
+    "prose_chars": 4456
+   },
+   "index_size": 28
+  },
+  {
+   "paper": "layerwise_lr_grokking",
+   "released_N": 0,
+   "control": {
+    "bound": 2,
+    "prose_chars": 5260
+   },
+   "treatment": {
+    "bound": 40,
+    "proposed": 40,
+    "prose_chars": 2714
+   },
+   "index_size": 40
+  }
+ ],
+ "median_released": 0.0,
+ "median_control": 16,
+ "median_treatment": 28
+}

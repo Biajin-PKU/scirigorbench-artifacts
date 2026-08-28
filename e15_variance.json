@@ -1,0 +1,126 @@
+{
+ "substrate": "84",
+ "N": 159,
+ "K": 3,
+ "delta": 0.3,
+ "model": "gpt-5.6-sol",
+ "reps": 6,
+ "rows": [
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 3,
+   "X": 3,
+   "p": 1.5212387751593878e-06,
+   "e": 405.38839401245815,
+   "rep": 0,
+   "raw": 4,
+   "unmapped": 1,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0",
+    "metric::results.json.summary[XES3G5M|chronological|KGAT|ndcg10].mean::0"
+   ]
+  },
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 3,
+   "X": 3,
+   "p": 1.5212387751593878e-06,
+   "e": 405.38839401245815,
+   "rep": 1,
+   "raw": 4,
+   "unmapped": 1,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0",
+    "metric::results.json.summary[XES3G5M|chronological|KGAT|ndcg10].mean::0"
+   ]
+  },
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 2,
+   "X": 2,
+   "p": 0.0002388344877000239,
+   "e": 32.35351603767356,
+   "rep": 2,
+   "raw": 3,
+   "unmapped": 1,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0"
+   ]
+  },
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 3,
+   "X": 3,
+   "p": 1.5212387751593878e-06,
+   "e": 405.38839401245815,
+   "rep": 3,
+   "raw": 5,
+   "unmapped": 2,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0",
+    "metric::results.json.summary[XES3G5M|chronological|KGAT|ndcg10].mean::0"
+   ]
+  },
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 2,
+   "X": 2,
+   "p": 0.0002388344877000239,
+   "e": 32.35351603767356,
+   "rep": 4,
+   "raw": 4,
+   "unmapped": 2,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0"
+   ]
+  },
+  {
+   "auditor": "M1",
+   "N": 159,
+   "K": 3,
+   "A": 3,
+   "X": 3,
+   "p": 1.5212387751593878e-06,
+   "e": 405.38839401245815,
+   "rep": 5,
+   "raw": 4,
+   "unmapped": 1,
+   "hits": [
+    "metric::results.json.summary[EdNet-KT1|chronological|DGEKT|ndcg10].sd::0",
+    "metric::results.json.summary[EdNet-KT1|chronological|UC-DGRec|recall10].mean::0",
+    "metric::results.json.summary[XES3G5M|chronological|KGAT|ndcg10].mean::0"
+   ]
+  }
+ ],
+ "spread": {
+  "A": [
+   2,
+   3
+  ],
+  "X": [
+   2,
+   3
+  ],
+  "e": [
+   32.35351603767356,
+   405.38839401245815
+  ]
+ },
+ "certified": 6,
+ "same_hits_every_time": false
+}

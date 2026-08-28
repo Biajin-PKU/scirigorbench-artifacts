@@ -1,0 +1,554 @@
+{
+ "substrates": 64,
+ "usable": 3,
+ "floor": 10,
+ "excluded": [
+  {
+   "arm": "ICML-26 repro",
+   "id": "repro-last-iterate-proximal-artifacts",
+   "why": "no manuscript published"
+  }
+ ],
+ "spearman": {
+  "keys": 0.251,
+  "chars": -0.073,
+  "keys_per_kchar": 0.239
+ },
+ "separation": {
+  "keys": {
+   "best_f1": 0.5,
+   "threshold": 3430,
+   "selects": 1,
+   "precision": 1.0,
+   "recall": 0.333
+  },
+  "chars": {
+   "best_f1": 0.148,
+   "threshold": 33754,
+   "selects": 24,
+   "precision": 0.083,
+   "recall": 0.667
+  },
+  "keys_per_kchar": {
+   "best_f1": 0.4,
+   "threshold": 95.67,
+   "selects": 2,
+   "precision": 0.5,
+   "recall": 0.333
+  }
+ },
+ "rows": [
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_bi_align",
+   "N": 0,
+   "keys": 1069,
+   "chars": 6707,
+   "keys_per_kchar": 159.39
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_buildingtrust",
+   "N": 2,
+   "keys": 332,
+   "chars": 6575,
+   "keys_per_kchar": 50.49
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_data_problems",
+   "N": 5,
+   "keys": 329,
+   "chars": 6403,
+   "keys_per_kchar": 51.38
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_dl4c",
+   "N": 2,
+   "keys": 205,
+   "chars": 7408,
+   "keys_per_kchar": 27.67
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_mldpr",
+   "N": 3,
+   "keys": 543,
+   "chars": 7211,
+   "keys_per_kchar": 75.3
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_question",
+   "N": 2,
+   "keys": 200,
+   "chars": 7470,
+   "keys_per_kchar": 26.77
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_scope",
+   "N": 1,
+   "keys": 358,
+   "chars": 6377,
+   "keys_per_kchar": 56.14
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_scsl",
+   "N": 5,
+   "keys": 334,
+   "chars": 8689,
+   "keys_per_kchar": 38.44
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_verifai",
+   "N": 1,
+   "keys": 86,
+   "chars": 6437,
+   "keys_per_kchar": 13.36
+  },
+  {
+   "arm": "AI Scientist-v2",
+   "id": "iclr2025_wsl",
+   "N": 1,
+   "keys": 246,
+   "chars": 7484,
+   "keys_per_kchar": 32.87
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_bi_align",
+   "N": 9,
+   "keys": 29,
+   "chars": 34289,
+   "keys_per_kchar": 0.85
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_bi_align",
+   "N": 3,
+   "keys": 28,
+   "chars": 34752,
+   "keys_per_kchar": 0.81
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_bi_align",
+   "N": 7,
+   "keys": 28,
+   "chars": 8578,
+   "keys_per_kchar": 3.26
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_buildingtrust",
+   "N": 5,
+   "keys": 33,
+   "chars": 30952,
+   "keys_per_kchar": 1.07
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_buildingtrust",
+   "N": 4,
+   "keys": 33,
+   "chars": 31745,
+   "keys_per_kchar": 1.04
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_buildingtrust",
+   "N": 10,
+   "keys": 33,
+   "chars": 10305,
+   "keys_per_kchar": 3.2
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_data_problems",
+   "N": 4,
+   "keys": 39,
+   "chars": 19393,
+   "keys_per_kchar": 2.01
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_data_problems",
+   "N": 3,
+   "keys": 39,
+   "chars": 29005,
+   "keys_per_kchar": 1.34
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_data_problems",
+   "N": 2,
+   "keys": 37,
+   "chars": 8977,
+   "keys_per_kchar": 4.12
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_dl4c",
+   "N": 2,
+   "keys": 46,
+   "chars": 26624,
+   "keys_per_kchar": 1.73
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_dl4c",
+   "N": 2,
+   "keys": 47,
+   "chars": 33495,
+   "keys_per_kchar": 1.4
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_dl4c",
+   "N": 0,
+   "keys": 46,
+   "chars": 10337,
+   "keys_per_kchar": 4.45
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_mldpr",
+   "N": 4,
+   "keys": 85,
+   "chars": 30372,
+   "keys_per_kchar": 2.8
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_mldpr",
+   "N": 3,
+   "keys": 85,
+   "chars": 34930,
+   "keys_per_kchar": 2.43
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_mldpr",
+   "N": 0,
+   "keys": 81,
+   "chars": 11015,
+   "keys_per_kchar": 7.35
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_question",
+   "N": 1,
+   "keys": 29,
+   "chars": 24245,
+   "keys_per_kchar": 1.2
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_question",
+   "N": 3,
+   "keys": 30,
+   "chars": 29245,
+   "keys_per_kchar": 1.03
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_question",
+   "N": 1,
+   "keys": 30,
+   "chars": 9897,
+   "keys_per_kchar": 3.03
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scope",
+   "N": 2,
+   "keys": 69,
+   "chars": 38939,
+   "keys_per_kchar": 1.77
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scope",
+   "N": 2,
+   "keys": 94,
+   "chars": 34756,
+   "keys_per_kchar": 2.7
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scope",
+   "N": 0,
+   "keys": 94,
+   "chars": 11729,
+   "keys_per_kchar": 8.01
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scsl",
+   "N": 6,
+   "keys": 56,
+   "chars": 29301,
+   "keys_per_kchar": 1.91
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scsl",
+   "N": 5,
+   "keys": 57,
+   "chars": 34874,
+   "keys_per_kchar": 1.63
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_scsl",
+   "N": 4,
+   "keys": 55,
+   "chars": 11176,
+   "keys_per_kchar": 4.92
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_verifai",
+   "N": 3,
+   "keys": 23,
+   "chars": 25279,
+   "keys_per_kchar": 0.91
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_verifai",
+   "N": 4,
+   "keys": 23,
+   "chars": 27841,
+   "keys_per_kchar": 0.83
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_verifai",
+   "N": 3,
+   "keys": 23,
+   "chars": 9067,
+   "keys_per_kchar": 2.54
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_wsl",
+   "N": 5,
+   "keys": 113,
+   "chars": 26888,
+   "keys_per_kchar": 4.2
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_wsl",
+   "N": 5,
+   "keys": 113,
+   "chars": 36074,
+   "keys_per_kchar": 3.13
+  },
+  {
+   "arm": "MLR-Agent",
+   "id": "iclr2025_wsl",
+   "N": 6,
+   "keys": 110,
+   "chars": 11381,
+   "keys_per_kchar": 9.67
+  },
+  {
+   "arm": "ARA",
+   "id": null,
+   "N": 0,
+   "keys": 0,
+   "chars": 845,
+   "keys_per_kchar": 0.0
+  },
+  {
+   "arm": "ARA",
+   "id": null,
+   "N": 1,
+   "keys": 37,
+   "chars": 8769,
+   "keys_per_kchar": 4.22
+  },
+  {
+   "arm": "ARA",
+   "id": null,
+   "N": 0,
+   "keys": 0,
+   "chars": 9989,
+   "keys_per_kchar": 0.0
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "adaptive_dual_scale_denoising",
+   "N": 1,
+   "keys": 16,
+   "chars": 41045,
+   "keys_per_kchar": 0.39
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "data_augmentation_grokking",
+   "N": 0,
+   "keys": 48,
+   "chars": 32441,
+   "keys_per_kchar": 1.48
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "dual_expert_denoiser",
+   "N": 0,
+   "keys": 16,
+   "chars": 36084,
+   "keys_per_kchar": 0.44
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "gan_diffusion",
+   "N": 0,
+   "keys": 16,
+   "chars": 31133,
+   "keys_per_kchar": 0.51
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "grid_based_noise_adaptation",
+   "N": 0,
+   "keys": 28,
+   "chars": 33846,
+   "keys_per_kchar": 0.83
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "layerwise_lr_grokking",
+   "N": 0,
+   "keys": 40,
+   "chars": 37919,
+   "keys_per_kchar": 1.05
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "mdl_grokking_correlation",
+   "N": 12,
+   "keys": 48,
+   "chars": 33754,
+   "keys_per_kchar": 1.42
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "multi_style_adapter",
+   "N": 1,
+   "keys": 36,
+   "chars": 37606,
+   "keys_per_kchar": 0.96
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "rl_lr_adaptation",
+   "N": 0,
+   "keys": 24,
+   "chars": 28320,
+   "keys_per_kchar": 0.85
+  },
+  {
+   "arm": "AI Scientist-v1",
+   "id": "weight_initialization_grokking",
+   "N": 0,
+   "keys": 40,
+   "chars": 37299,
+   "keys_per_kchar": 1.07
+  },
+  {
+   "arm": "ICML-26 repro",
+   "id": "mp-moe-reproduction-bundle",
+   "N": 1,
+   "keys": 22,
+   "chars": 19351,
+   "keys_per_kchar": 1.14
+  },
+  {
+   "arm": "ICML-26 repro",
+   "id": "repro-gaussian-mechanism-sgg-optimality-traces",
+   "N": 0,
+   "keys": 0,
+   "chars": 538793,
+   "keys_per_kchar": 0.0
+  },
+  {
+   "arm": "ICML-26 repro",
+   "id": "repro-learning-to-share-selective-memory-for-efficient-parallel-agentic-systems-traces",
+   "N": 0,
+   "keys": 0,
+   "chars": 557954,
+   "keys_per_kchar": 0.0
+  },
+  {
+   "arm": "ICML-26 repro",
+   "id": "success-conditioning-repro",
+   "N": 0,
+   "keys": 0,
+   "chars": 2163826,
+   "keys_per_kchar": 0.0
+  },
+  {
+   "arm": "RH (development)",
+   "id": "84",
+   "N": 159,
+   "keys": 3430,
+   "chars": 35852,
+   "keys_per_kchar": 95.67
+  },
+  {
+   "arm": "RH (development)",
+   "id": "85",
+   "N": 0,
+   "keys": 1121,
+   "chars": 38619,
+   "keys_per_kchar": 29.03
+  },
+  {
+   "arm": "RH (development)",
+   "id": "86",
+   "N": 4,
+   "keys": 380,
+   "chars": 94719,
+   "keys_per_kchar": 4.01
+  },
+  {
+   "arm": "RH (development)",
+   "id": "87",
+   "N": 4,
+   "keys": 526,
+   "chars": 50944,
+   "keys_per_kchar": 10.33
+  },
+  {
+   "arm": "RH (development)",
+   "id": "88",
+   "N": 0,
+   "keys": 473,
+   "chars": 42930,
+   "keys_per_kchar": 11.02
+  },
+  {
+   "arm": "RH (development)",
+   "id": "89",
+   "N": 1,
+   "keys": 423,
+   "chars": 34333,
+   "keys_per_kchar": 12.32
+  },
+  {
+   "arm": "RH (development)",
+   "id": "90",
+   "N": 4,
+   "keys": 214,
+   "chars": 39480,
+   "keys_per_kchar": 5.42
+  }
+ ]
+}

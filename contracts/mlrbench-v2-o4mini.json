@@ -1,0 +1,21 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "AI Scientist-v2 (o4-mini), as released in MLR-Bench chchenhui/mlrbench, MIT",
+ "_provenance": "experimenter-supplied; the arm ships no contract of its own. Declared by hand from the released directory layout BEFORE any audit of this arm, and frozen with it. See D3-recording-contract.md section 2.2.",
+ "_substrate_caveat": "These artifacts were captured by the MLR-Bench authors, not by us at a sandbox boundary. Cross-arm comparability that rests on a uniform capture boundary therefore does NOT extend to this arm, and the paper must say so rather than let the reader assume it.",
+ "_holdout_split": "iclr2025_dl4c is the DEVELOPMENT task: the PDF text path could not be developed on the RH arm, whose substrate is LaTeX. The remaining nine tasks are held out and are only run, never tuned against.",
+ "reportable_outputs": [
+  "experiments/research_summary.json",
+  "experiments/baseline_summary.json",
+  "experiments/ablation_summary.json",
+  "experiments/draft_summary.json",
+  "experiments/best_solution_*.py",
+  "token_tracker.json"
+ ],
+ "excluded_rationale": {
+  "experiments/idea.md": "prose proposal, no artifact-side numbers to compare against",
+  "review_*.json": "the arm's own in-loop and post-hoc reviewers. These are the OBJECT of the third leaderboard column, not evidence the manuscript may cite; indexing them would let a reviewer's own numbers resolve a claim about the experiment.",
+  "*.pdf": "the claim side, not the artifact side"
+ },
+ "_code_as_artifact": "best_solution_*.py is declared REPORTABLE because this arm ships no config table: the hyper-parameters MLRC requires a paper to specify live only in the released script. D3 face A excludes code as a CLAIM type, which is a statement about what a manuscript can assert, not about where an artifact value may be found. Indexed by AST literal assignment, never by regex."
+}

@@ -1,0 +1,322 @@
+[
+ {
+  "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2606.07591v5",
+  "venue": "arXiv",
+  "bibkey": "researchclawbench2026"
+ },
+ {
+  "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2602.15112v2",
+  "venue": "arXiv",
+  "bibkey": "researchgym2026"
+ },
+ {
+  "title": "Engineering Reliable Coding Agents: Evaluating and Operating the System Around the Model",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2608.13867v1",
+  "venue": "arXiv",
+  "bibkey": "engineering2026"
+ },
+ {
+  "title": "FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2608.00764v1",
+  "venue": "arXiv",
+  "bibkey": "findeepindicator2026"
+ },
+ {
+  "title": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation in Dual-Control Settings",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2603.09643v5",
+  "venue": "arXiv",
+  "bibkey": "persona2026"
+ },
+ {
+  "title": "ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "2602.01655v2",
+  "venue": "arXiv",
+  "bibkey": "projdevbench2026"
+ },
+ {
+  "title": "fire-bench: evaluating agents on the rediscovery of scientific insights",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "",
+  "venue": "",
+  "bibkey": "fire2026"
+ },
+ {
+  "title": "MedResearchBench: A Multi-Domain Benchmark for Evaluating AI Research Agents on Clinical Medical Research",
+  "year": "2026",
+  "lane": "agent-eval-benchmarks",
+  "id": "",
+  "venue": "",
+  "bibkey": "medresearchbench2026"
+ },
+ {
+  "title": "from program slices to causal clarity: evaluating faithful, actionable llm-generated failure explanations via context partitioning and llm-as-a-judge",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "",
+  "bibkey": "from2026"
+ },
+ {
+  "title": "am i more pointwise or pairwise? revealing position bias in rubric-based llm-as-a-judge",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "",
+  "bibkey": "more2026"
+ },
+ {
+  "title": "Analysis of LLM-as-a-Judge Position Bias Mechanism Based on Controlled Synthesis Data",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "Theoretical and Natural Science",
+  "bibkey": "analysis2026"
+ },
+ {
+  "title": "When the Judge is Wrong: Measuring LLM-as-Judge Reliability Against Graph-Verified Ground Truth in Financial Documents",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "",
+  "bibkey": "when2026"
+ },
+ {
+  "title": "Contrastive Decoding Mitigates Score Range Bias in LLM-as-a-Judge",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "Findings of the Association for Computat",
+  "bibkey": "contrastive2026"
+ },
+ {
+  "title": "Human-anchored longitudinal comparison of generative AI with a bias-calibrated LLM-as-judge",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "PLOS One",
+  "bibkey": "human2026"
+ },
+ {
+  "title": "A Scalable LLM-as-Judge Framework for Automated Evaluation of Generative AI Systems with Domain-Adaptive Calibration",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "2026 International Conference on Intelli",
+  "bibkey": "scalable2026"
+ },
+ {
+  "title": "The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge",
+  "year": "2026",
+  "lane": "llm-judge-reliability",
+  "id": "",
+  "venue": "KIISE Transactions on Computing Practice",
+  "bibkey": "impact2026"
+ },
+ {
+  "title": "Anytime-valid testing with e-values and confirmatory adaptive designs",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2606.00878v1",
+  "venue": "arXiv",
+  "bibkey": "anytime2026"
+ },
+ {
+  "title": "E-values for Adaptive Clinical Trials: Anytime-Valid Monitoring in Practice",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2602.06379v1",
+  "venue": "arXiv",
+  "bibkey": "values2026"
+ },
+ {
+  "title": "Axioms for testing with data-dependent levels and e-values",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2605.28429v4",
+  "venue": "arXiv",
+  "bibkey": "axioms2026"
+ },
+ {
+  "title": "Everywhere Valid Bounds on False Discovery Proportions in Conformal Inference",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2605.20726v2",
+  "venue": "arXiv",
+  "bibkey": "everywhere2026"
+ },
+ {
+  "title": "Besag-Clifford e-values for unnormalized testing",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2603.15845v2",
+  "venue": "arXiv",
+  "bibkey": "besag2026"
+ },
+ {
+  "title": "Time-sensitive anytime-valid testing",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2605.06521v1",
+  "venue": "arXiv",
+  "bibkey": "time2026"
+ },
+ {
+  "title": "E-values and sequential power-one tests for monotonicity and unimodality",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2604.20612v2",
+  "venue": "arXiv",
+  "bibkey": "values2026a"
+ },
+ {
+  "title": "Bayes, E-values and Testing",
+  "year": "2026",
+  "lane": "evalues-sequential",
+  "id": "2602.04146v6",
+  "venue": "arXiv",
+  "bibkey": "bayes2026"
+ },
+ {
+  "title": "XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "2608.09519v1",
+  "venue": "arXiv",
+  "bibkey": "xfeat2026"
+ },
+ {
+  "title": "assessing reproducibility in evolutionary computation: a case study using human- and llm-based assessment",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "",
+  "bibkey": "assessing2026"
+ },
+ {
+  "title": "PRIME 2.0: Proposed Requirements for Cardiovascular Imaging-Related Multimodal-AI Evaluation: An Updated Checklist.",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "JACC. Cardiovascular imaging",
+  "bibkey": "prime2026"
+ },
+ {
+  "title": "Improving Reproducibility in Machine Learning: Overview, Barriers, and Drivers",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "",
+  "bibkey": "improving2026"
+ },
+ {
+  "title": "From \u201cAvailable\u201d to \u201cReusable\u201d: Measuring Transparency and Reproducibility of Industrial Control System Datasets Under Security Artifact Evaluation Policies",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "2026 IEEE Symposium on Security and Priv",
+  "bibkey": "from2026a"
+ },
+ {
+  "title": "A Survey of Machine Learning Lifecycle Provenance: Models, Approaches, and Tools",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "International Conference on Evaluation o",
+  "bibkey": "survey2026"
+ },
+ {
+  "title": "Automated Modernization of Machine Learning Engineering Notebooks for Reproducibility",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "CoRR 2026",
+  "bibkey": "automated2026"
+ },
+ {
+  "title": "papertrail: a claim-evidence interface for grounding provenance in llm-based scholarly q&a",
+  "year": "2026",
+  "lane": "reproducibility",
+  "id": "",
+  "venue": "",
+  "bibkey": "papertrail2026"
+ },
+ {
+  "title": "From Fluent to Verifiable: Claim-Level Auditability for Deep Research Agents",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2602.13855v1",
+  "venue": "arXiv",
+  "bibkey": "from2026b"
+ },
+ {
+  "title": "From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2606.04990v4",
+  "venue": "arXiv",
+  "bibkey": "from2026c"
+ },
+ {
+  "title": "LEDGER: Claim-to-Evidence Trace Graphs for Auditing LLM Agents",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2608.18398v1",
+  "venue": "arXiv",
+  "bibkey": "ledger2026"
+ },
+ {
+  "title": "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2608.05204v2",
+  "venue": "arXiv",
+  "bibkey": "skilltrace2026"
+ },
+ {
+  "title": "HDP: A Lightweight Cryptographic Protocol for Human Delegation Provenance in Agentic AI Systems",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2604.04522v1",
+  "venue": "arXiv",
+  "bibkey": "lightweight2026"
+ },
+ {
+  "title": "Reasoning Provenance for Autonomous AI Agents: Structured Behavioral Analytics Beyond State Checkpoints and Execution Traces",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2603.21692v2",
+  "venue": "arXiv",
+  "bibkey": "reasoning2026"
+ },
+ {
+  "title": "SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2602.04418v3",
+  "venue": "arXiv",
+  "bibkey": "spear2026"
+ },
+ {
+  "title": "Stop Drawing Scientific Claims from LLM Social Simulations Without Robustness Audits",
+  "year": "2026",
+  "lane": "auditability-agents",
+  "id": "2605.18890v1",
+  "venue": "arXiv",
+  "bibkey": "stop2026"
+ }
+]

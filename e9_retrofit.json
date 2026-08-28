@@ -1,0 +1,11 @@
+{
+ "task": "iclr2025_scope",
+ "writer": "claude-3-7-sonnet-20250219",
+ "artifact_keys": 69,
+ "marks_before": 25,
+ "marks_after": 24,
+ "invariant": false,
+ "lost": [
+  "main.py:LinearLR.end_factor"
+ ]
+}

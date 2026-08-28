@@ -1,0 +1,56 @@
+{
+ "model": "gpt-5.6-sol",
+ "rows": [
+  {
+   "proposed": 15,
+   "resolvable": 15,
+   "printed_in_prose": 15,
+   "faithful": 15,
+   "bound": 15,
+   "task": "iclr2025_bi_align",
+   "index_size": 1109,
+   "prose_chars": 1095
+  },
+  {
+   "proposed": 23,
+   "resolvable": 23,
+   "printed_in_prose": 23,
+   "faithful": 23,
+   "bound": 23,
+   "task": "iclr2025_buildingtrust",
+   "index_size": 335,
+   "prose_chars": 992
+  },
+  {
+   "proposed": 24,
+   "resolvable": 24,
+   "printed_in_prose": 24,
+   "faithful": 24,
+   "bound": 24,
+   "task": "iclr2025_data_problems",
+   "index_size": 334,
+   "prose_chars": 1080
+  },
+  {
+   "proposed": 17,
+   "resolvable": 17,
+   "printed_in_prose": 17,
+   "faithful": 17,
+   "bound": 17,
+   "task": "iclr2025_dl4c",
+   "index_size": 229,
+   "prose_chars": 3179
+  },
+  {
+   "proposed": 17,
+   "resolvable": 17,
+   "printed_in_prose": 17,
+   "faithful": 17,
+   "bound": 17,
+   "task": "iclr2025_mldpr",
+   "index_size": 729,
+   "prose_chars": 1172
+  }
+ ],
+ "survival_rate": 1.0
+}

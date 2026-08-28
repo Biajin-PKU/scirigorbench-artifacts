@@ -1,0 +1,187 @@
+{
+ "schema": "scirigorbench.freeze.v1",
+ "why": "E8 preregistration section 6: fixed before the first external arm runs. A later change to any entry turns held-out into in-sample.",
+ "files": {
+  "phi.py": "f3ffde707313b9f1aaba5583a5787b825fa911b89f8a3b8f18d932837af7f124",
+  "e1.py": "d79033dd9b82cc2b022f4211907ccee34d180091456ce10568add5b02a4caef9",
+  "e2.py": "2a94c00ab866f0ff93a12be9502679f325c586e1f8cc1256502e08912607d13f",
+  "m1.py": "c75b49980f8d8630f152e1fac323cdb8af6124ac662e95cea818e7ce91f2bd00",
+  "D3-recording-contract.md": "60a4f8e1455f7b4183ab2a0eb8e1f9b0e6061c8496801a9b07488569617ce92b",
+  "contracts/substrate-84.json": "1b4183ee222907a20c72134e86dca94bdcf11c2effc6d6bbf2a3fc2694a91bf3"
+ },
+ "thresholds": {
+  "MIN_OVERLAP": 2,
+  "FRAME_CHARS": 90,
+  "KAPPA": 0.5,
+  "evaluability_floor_N": 10
+ },
+ "catalogue": {
+  "types": [
+   "metric",
+   "stat_test",
+   "seeds",
+   "split",
+   "hyperparam",
+   "data_source",
+   "compute",
+   "retrieval",
+   "inclusion"
+  ],
+  "order_is_priority": true,
+  "anchors": [
+   "MLRC v2.0 (arXiv:2003.12206)",
+   "NeurIPS Paper Checklist",
+   "PRISMA 2020 (BMJ 2021;372:n71)"
+  ],
+  "layers": [
+   "literature_review",
+   "idea_generation",
+   "experimental_preparation",
+   "experimental_execution",
+   "scientific_writing",
+   "paper_generation"
+  ],
+  "type_to_layer": {
+   "retrieval": "literature_review",
+   "inclusion": "literature_review",
+   "data_source": "experimental_preparation",
+   "split": "experimental_preparation",
+   "hyperparam": "experimental_preparation",
+   "seeds": "experimental_execution",
+   "compute": "experimental_execution",
+   "metric": "experimental_execution",
+   "stat_test": "experimental_execution"
+  },
+  "stages_reached": [
+   "experimental_execution",
+   "experimental_preparation",
+   "literature_review"
+  ]
+ },
+ "development_substrate": {
+  "run": "<redacted-absolute-path>",
+  "N": 159,
+  "universe_digest": "1ed2079c1c3513d0b39bc26409b49519676fb3ef1f6a3658fb1bc253f043aa45",
+  "parse_failure_rate": 0.5511,
+  "not_recorded_rate": 0.0215
+ },
+ "release_mapping": {
+  "substrate-84.json": {
+   "original_name": "substrate-84.json",
+   "original_sha256": "1b4183ee222907a20c72134e86dca94bdcf11c2effc6d6bbf2a3fc2694a91bf3",
+   "release_sha256": "6390e7ea942c5b7b079123391c0d49fc7cb4f69c94e0a7bfab867612c8300d64"
+  },
+  "substrate-85.json": {
+   "original_name": "substrate-85.json",
+   "original_sha256": "0f174471dc4599ddaaac3fe275ddcd0cb93e78fda5fefc9d7a2b39efb4aac1d1",
+   "release_sha256": "89bcbd460a570aae13f79c097d9c5006dff5ce4d65c6d52d821f28062c130e20"
+  },
+  "substrate-86.json": {
+   "original_name": "substrate-86.json",
+   "original_sha256": "71d1cf9726ed3d659ebe4162e3d372c5cbabe47b291401cd95a432ff98f83f15",
+   "release_sha256": "416e68504d646d3e83c8dfad22035fffef64e5fd7a710c83a8a60ac9cac9461f"
+  },
+  "substrate-87.json": {
+   "original_name": "substrate-87.json",
+   "original_sha256": "d297d6a1a6a963a956aef937e474b286ec5b9799a5209c537afdb127d0b58b1f",
+   "release_sha256": "0623acebff96dae1285553aaf76093caa87a865673d1ed8c0863dffffb775868"
+  },
+  "substrate-88.json": {
+   "original_name": "substrate-88.json",
+   "original_sha256": "eb1e7d589f06a59b2c2ee3eb5e0bca0d6432d4793f5b8329761e9c5cfadc15d1",
+   "release_sha256": "a19938290e9baf773403c21418e50a845caefb51cd260fdfd50e774102eec12f"
+  },
+  "substrate-89.json": {
+   "original_name": "substrate-89.json",
+   "original_sha256": "ffd13a3577aaddda48037f89173fa62dfe17c08eed41bd147b2aac381a3d0d44",
+   "release_sha256": "be8df99c6aceeb9d6e6048bd26944000b9cd587ac6e3e9f7d4aef33c73243a5c"
+  },
+  "substrate-90.json": {
+   "original_name": "substrate-90.json",
+   "original_sha256": "6c1fc2b57aaab5848aad70407bdd2fa33044b16e2a1e8e5ec1c6e087907f014b",
+   "release_sha256": "6357b4851ea62bbe2b0393b3930d7f48245f1c9be30dfee0f755285ecd78dd50"
+  }
+ },
+ "release_files": {
+  "e1.py": "d79033dd9b82cc2b022f4211907ccee34d180091456ce10568add5b02a4caef9",
+  "e10.py": "e237015d90b3912a132fc47e6ba079967f89adf579d1fa7a6efba541bdbc7797",
+  "e11.py": "63c9d75964adc1a5159ce78d27ebc7128303a3895a4d3e6d9e871b517b4b5f71",
+  "e12.py": "1048b15a3319434c3feea49872be0f4f3f9bd12f2883d7940864b031629bcefb",
+  "e13.py": "eadbbf99be5df392f948a3788e60934e490a2408ed691736a3efe8a8d65af2e0",
+  "e14.py": "716085148dc163a1560dd0348c658ffcf054efe0ba72890b6a2fd9115746544c",
+  "e15.py": "26f7e560d08db81e9b6e63d81d576f42772829bc2d45c90690c695355d820298",
+  "e16.py": "586192b56079ade2151a784b04dd6ee9f27c4e698349c5b085b4c938bbd3355b",
+  "e17.py": "97b2445a2686a895ad58948642f5c06321a67a648aafe5dab144f49c121dd8b6",
+  "e18.py": "78315ea497fe330c1bc32fd86e58fa5d7a79080816a35d5966f17cd154dbc6df",
+  "e2.py": "2a94c00ab866f0ff93a12be9502679f325c586e1f8cc1256502e08912607d13f",
+  "e20.py": "6265108ccf680cff7ac9b43e2ea8304d2b507241ebf98c3dc2a07cab327eb08e",
+  "e21.py": "330b1e2b42c4fdf9210aa4f671cec792b30b49a958c31b7440f6dc974ec20139",
+  "e22.py": "12aaff7dfb396a9a0704e2d98a30f97b42922fd5f50353841d83a34a5a2e63a1",
+  "e4.py": "464c2a3050488f579c66d649ea533ae90164cd382706b879c75747e3da4edb4f",
+  "e5.py": "bb53a25a780d1ac0618012f6def404e4caaa873c9e43a61d58c9ef22769d2850",
+  "e7.py": "7c4f7d3878655c30fce48b0c52faf9a713a4cc0055ae7864052607459ad73435",
+  "e8.py": "5a89d7eef6edf64dee44d7179cb9fbaf29aaf96dc8d0322a3846454175f8afd3",
+  "e9.py": "49c12ff5956bb1734c3b7539bebf009d6067bf8fb8b007389873ddeb6b488934",
+  "freeze.py": "cfade25a03826be3a951d150e1ee006f793242e3045e2d835f478073358c5769",
+  "m1.py": "f166ae786cec86d4c02d2ac44684eec44f2efc952b5a99ed2e21fb187fdeb712",
+  "phi.py": "888dc57815249fb73e65767ca14d8fdae970f1d59e304f2ba899e1245d20f4fb",
+  "verify_numbers.py": "4444214685da22006a029123cae078f0bf34084e4e0fbd22ce86ccd9588f9453",
+  "e10_result.json": "409a7833910f2937521fdf24ef925a6a69c82ecf84a34c766b6f07c8420a8cfe",
+  "e11_result.json": "d1ef8d5bec0371b1db934b2cabd2d9f03d0c6e17ac29d2ceda03179544d689fb",
+  "e12_floor.json": "c6d0d8d49cc0d202b2cee961de9a34707586198e1e1f8cbc066ca808fa28ad74",
+  "e13_ceiling.json": "0d77d84b485dbdd6b118571fb7d0692e1957a94eaf802f20db23ef04c9dbebb5",
+  "e14_power_cost.json": "47348bb79bc5dac9d22240726d6c0a1d8b132dd5e2c624675c2050a8dbc75de7",
+  "e15_variance.json": "0de1045a9c8669dcceecb4c5e300b1f3ebcbab46a80b7854de6a04b11d3cb85a",
+  "e16_mechanism.json": "f6ad00d9cdb22e552aeb35121c8987a3101542e27ef7cd60ab6fe8f55538a730",
+  "e17_compliance.json": "017573ca4d09ebeda82cdda9a6a82454ec2eaedd0e7277c19bd26f576063ca4b",
+  "e18_agent_writer.json": "5ae12700d40d564cf4443bf6200977fbc32c2dd2610fd7923c7467879905432d",
+  "e1_m1.json": "20aaebb1cd85d7503acfe6d262894da740f7c9f72c4aec6e6d845f4ed0234bd4",
+  "e1_m1_delta.json": "2ce70deed82cb3e0b33f39fd7737dc1b1260240bff9741e7184a6bdec4c8639b",
+  "e1_m1_delta_clean.json": "a79675bf2a05ca3d3283771fc72755bab0f2fec64c3907e477706c6c87dd6193",
+  "e1_m1_remeasured.json": "3b309168c5c6c225ae68660ddda65853cfdfec2a5dde01ac809fda0fb9b5512b",
+  "e1_m1_remeasured_k0.json": "ebf54096f46635a3589bad3be33fb774a5c346a433081c7b18c2f1acac5193c7",
+  "e1_m1_remeasured_k3.json": "aafdffcdc47205107c6512028079777f80446d6bcb0129bfca8a02478437e173",
+  "e1_m2.json": "1c29a320858a6becb913b457cf04ce656e933205012cb5592fdff55c66703f2c",
+  "e1_m2_all7.json": "e326795ce7bebc06772d2f38ef39075799b9efb5f7f3c983381f5f459a7c50db",
+  "e2.json": "20328727721a4a57924dafcae67bf82873a43338ada3ab3e86e68de94151656e",
+  "e20_predictors.json": "c01247db55755bac27e0bd9b6f30a1ba541c2eb0674d6b3de760d7313febf753",
+  "e21_matched.json": "3ed3bfd8145ab91be871c62945a495baf47df726e323ade0bcec8df7d7f76729",
+  "e22_ambiguity.json": "5e77cd0178e4ebe93636609a84e4efc0380286e6f411fbfe0d1b2e0920d1c5ec",
+  "e4_stability.json": "ce32f5072e7c2806629e2fd5fdac3b74fb2fac17a2d4cbd5c879b3e58073288b",
+  "e5_patch.json": "a7afde077ffb9126b0b63c016a0b12e5e2b75c4e73a78da214f915224e3ec459",
+  "e7_padding.json": "582996cdd55e1aeb6c678a6d54ae2b5a3082bccfa3b7d5e5f0ad62a1bea3fd24",
+  "e8_verdict.json": "652d3080fdf011bfc94c0e1ff1a055ba6b1c148b61c73c95021eb9eb60192603",
+  "e9_retrofit.json": "17dfed650420f855d35db4e11498ad104bcce9edc694a1ae44cd6d1277f4960c",
+  "refs_selected.json": "8a6a7b76aed86b0df695b8d3f99782d2d41167dc4481dbb6ae9456cc2cec9b72",
+  "tables.json": "2d7e8db3887ab3f4f461f1cbe5bbd7dbd9d63f31b63f7159654c72a8e8d1fb09",
+  "arms/mlrbench_agent.py": "7a02b7e1fa58c0476e94eadd2d9ad954d5a23b56875aab26a7820431c5543dc3",
+  "arms/ara_labs.py": "00295932f4ee28366a2361c8b7d61552102195a8de13931a3b793d1984ecb66d",
+  "arms/mlrbench_v2.py": "6bc58bdca939f9f6a3ca55f5bc09add50d7956aa87b55f463de79e44b567167b",
+  "arms/icml_repro.py": "14821cf9a9f2c8ca625f061f71d55ce4f19d28806898fac7de9f704a5c5ea6ab",
+  "arms/aiscientist_v1.py": "3c38daef795fc952bdd60b10abbf9b8ac3aaf40794cac1c01c87abc2103df07c",
+  "arms/ara_labs_phi.json": "5f017979ad07e1e1cd93a35567a32a32bafe224c8783819d18e1eade061812bb",
+  "arms/mlrbench_agent_phi.json": "44be58a22ce87aa07b0cfd87d7e5d8996e1482910764085c004e307037c815e5",
+  "arms/icml_repro_phi.json": "fd3408e6742530a52acacb09a450840a6eb0827b57bb4619d502fd338b3e3819",
+  "arms/mlrbench_v2_phi.json": "f1d2225e4d0f7564cff3c81096b0735bc5f79672a146f55bc024880f1acb1ba1",
+  "arms/aiscientist_v1_phi.json": "7b876a914de7e85ef49cafaeee24eee277533054b26ff53561a1f82dc01dc1ed",
+  "contracts/aiscientist-v1.json": "efffb9a3bbfb1b7fe1d2b18b8c0fc9dc0fe42c1199db26904d404d7ea067a9a3",
+  "contracts/ara-labs.json": "744d9536b4c272bbfe54554d3f4582424ba43112c2d65106d354a43f3162d402",
+  "contracts/substrate-84.json": "6390e7ea942c5b7b079123391c0d49fc7cb4f69c94e0a7bfab867612c8300d64",
+  "contracts/substrate-85.json": "89bcbd460a570aae13f79c097d9c5006dff5ce4d65c6d52d821f28062c130e20",
+  "contracts/substrate-86.json": "416e68504d646d3e83c8dfad22035fffef64e5fd7a710c83a8a60ac9cac9461f",
+  "contracts/substrate-87.json": "0623acebff96dae1285553aaf76093caa87a865673d1ed8c0863dffffb775868",
+  "contracts/substrate-88.json": "a19938290e9baf773403c21418e50a845caefb51cd260fdfd50e774102eec12f",
+  "contracts/substrate-89.json": "be8df99c6aceeb9d6e6048bd26944000b9cd587ac6e3e9f7d4aef33c73243a5c",
+  "contracts/substrate-90.json": "6357b4851ea62bbe2b0393b3930d7f48245f1c9be30dfee0f755285ecd78dd50",
+  "contracts/icml-repro-challenge.json": "8843b641e01839e65c46addaaa09d59e8bb378493e499d2324d77fb1b0f3326a",
+  "contracts/mlrbench-agent-claude.json": "785584f65eb681a18d161dbeb90d2995819cda0cb1d3e2302a35fc688c9d9fc8",
+  "contracts/mlrbench-v2-o4mini.json": "3dfb9e6998c44dbfcfc027fca30f87655f8597b40e403405ae9d7a89be0adff2",
+  "D3-recording-contract.md": "a45dfa9f990dd52bdb296f5b238256a7e72ebad8169359392a7768221029dad9"
+ },
+ "redactions": [
+  {
+   "field": "$.development_substrate.run",
+   "run_sha256": "d1492479e0ff3b68079c422efbe648af2929e1fbea8a5f5184dba425ab1a1c31"
+  }
+ ]
+}

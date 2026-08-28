@@ -1,0 +1,113 @@
+{
+ "per_cause": {
+  "AI Scientist-v2": {
+   "runs": 10,
+   "no_candidate": 3,
+   "ambiguous": 436,
+   "weak_overlap": 22,
+   "parse_failure_median_pct": 95.2,
+   "not_recorded_median_pct": 0.0
+  },
+  "MLR-Agent": {
+   "runs": 30,
+   "no_candidate": 1200,
+   "ambiguous": 838,
+   "weak_overlap": 0,
+   "parse_failure_median_pct": 43.4,
+   "not_recorded_median_pct": 54.6
+  },
+  "ARA": {
+   "runs": 3,
+   "no_candidate": 59,
+   "ambiguous": 50,
+   "weak_overlap": 0,
+   "parse_failure_median_pct": 0.0,
+   "not_recorded_median_pct": 100.0
+  },
+  "AI Scientist-v1": {
+   "runs": 10,
+   "no_candidate": 541,
+   "ambiguous": 136,
+   "weak_overlap": 0,
+   "parse_failure_median_pct": 9.2,
+   "not_recorded_median_pct": 90.8
+  },
+  "ICML-26 repro": {
+   "runs": 5,
+   "no_candidate": 1793,
+   "ambiguous": 62,
+   "weak_overlap": 0,
+   "parse_failure_median_pct": 0.0,
+   "not_recorded_median_pct": 100.0
+  }
+ },
+ "arms": {
+  "AI Scientist-v2": {
+   "runs": 10,
+   "median_N": 2.0,
+   "max_N": 5,
+   "scoreable_at_10": 0
+  },
+  "MLR-Agent": {
+   "runs": 30,
+   "median_N": 3.0,
+   "max_N": 10,
+   "scoreable_at_10": 1
+  },
+  "ARA": {
+   "runs": 3,
+   "median_N": 0,
+   "max_N": 1,
+   "scoreable_at_10": 0
+  },
+  "AI Scientist-v1": {
+   "runs": 10,
+   "median_N": 0.0,
+   "max_N": 12,
+   "scoreable_at_10": 1
+  },
+  "ICML-26 repro": {
+   "runs": 5,
+   "median_N": 0,
+   "max_N": 1,
+   "scoreable_at_10": 0
+  }
+ },
+ "totals": {
+  "external_runs": 58,
+  "max_N": 12,
+  "sources": 5,
+  "scoreable_at_10": 2
+ },
+ "attainable_evidence": {
+  "5": {
+   "1": 1.1,
+   "2": 1.6,
+   "3": 1.6
+  },
+  "10": {
+   "1": 1.6,
+   "2": 3.4,
+   "3": 5.5,
+   "5": 7.9
+  },
+  "23": {
+   "1": 2.4,
+   "2": 8.0,
+   "3": 21.0,
+   "5": 91.7
+  },
+  "159": {
+   "1": 6.3,
+   "2": 56.0,
+   "3": 405.4,
+   "5": 14095.6
+  },
+  "needed": 20.0,
+  "min_N_at_K3": 23,
+  "best_at_max_external_N": 15.2
+ },
+ "derived": {
+  "adjudicator_e_fold_range": 12.5
+ }
+}

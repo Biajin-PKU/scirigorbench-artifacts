@@ -1,0 +1,69 @@
+[
+ {
+  "submission": "mp-moe-reproduction-bundle",
+  "manuscript_chars": 19351,
+  "artifact_keys": 22,
+  "N": 1,
+  "unresolved": 0,
+  "parse_failure_rate": 0.4526,
+  "not_recorded_rate": 0.5401,
+  "by_cause": {
+   "no_candidate": 74,
+   "weak_overlap": 0,
+   "ambiguous": 62
+  },
+  "evaluable": false
+ },
+ {
+  "submission": "repro-gaussian-mechanism-sgg-optimality-traces",
+  "manuscript_chars": 538793,
+  "artifact_keys": 0,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "by_cause": {
+   "no_candidate": 496,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "evaluable": false
+ },
+ {
+  "submission": "repro-last-iterate-proximal-artifacts",
+  "manuscript_chars": 0,
+  "artifact_keys": 47,
+  "N": 0,
+  "no_claims": true
+ },
+ {
+  "submission": "repro-learning-to-share-selective-memory-for-efficient-parallel-agentic-systems-traces",
+  "manuscript_chars": 557954,
+  "artifact_keys": 0,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "by_cause": {
+   "no_candidate": 573,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "evaluable": false
+ },
+ {
+  "submission": "success-conditioning-repro",
+  "manuscript_chars": 2163826,
+  "artifact_keys": 0,
+  "N": 0,
+  "unresolved": 0,
+  "parse_failure_rate": 0.0,
+  "not_recorded_rate": 1.0,
+  "by_cause": {
+   "no_candidate": 650,
+   "weak_overlap": 0,
+   "ambiguous": 0
+  },
+  "evaluable": false
+ }
+]

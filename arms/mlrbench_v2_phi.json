@@ -1,0 +1,206 @@
+[
+ {
+  "task": "iclr2025_bi_align",
+  "manuscript_chars": 6707,
+  "artifact_keys": 1069,
+  "N": 0,
+  "unresolved": 49,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 3,
+   "ambiguous": 46
+  },
+  "parse_failure_rate": 1.0,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {},
+  "universe_digest": "e3b0c44298fc1c14",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_buildingtrust",
+  "manuscript_chars": 6575,
+  "artifact_keys": 332,
+  "N": 2,
+  "unresolved": 26,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 2,
+   "ambiguous": 24
+  },
+  "parse_failure_rate": 0.9286,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1,
+   "experimental_execution": 1
+  },
+  "universe_digest": "358be9c1531d26c5",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_data_problems",
+  "manuscript_chars": 6403,
+  "artifact_keys": 329,
+  "N": 5,
+  "unresolved": 35,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 0,
+   "ambiguous": 35
+  },
+  "parse_failure_rate": 0.875,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 3,
+   "experimental_execution": 2
+  },
+  "universe_digest": "7ade42ab84557e6a",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_dl4c",
+  "manuscript_chars": 7408,
+  "artifact_keys": 205,
+  "N": 2,
+  "unresolved": 47,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 1,
+   "ambiguous": 46
+  },
+  "parse_failure_rate": 0.9592,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1,
+   "experimental_execution": 1
+  },
+  "universe_digest": "72dabee0417d6c19",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_mldpr",
+  "manuscript_chars": 7211,
+  "artifact_keys": 543,
+  "N": 3,
+  "unresolved": 39,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 3,
+   "ambiguous": 36
+  },
+  "parse_failure_rate": 0.9286,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 2,
+   "experimental_execution": 1
+  },
+  "universe_digest": "dfa7ee0c1b4711c2",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_question",
+  "manuscript_chars": 7470,
+  "artifact_keys": 200,
+  "N": 2,
+  "unresolved": 69,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 3,
+   "ambiguous": 66
+  },
+  "parse_failure_rate": 0.9718,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1,
+   "experimental_execution": 1
+  },
+  "universe_digest": "acccf7df1e2759b8",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_scope",
+  "manuscript_chars": 6377,
+  "artifact_keys": 358,
+  "N": 1,
+  "unresolved": 42,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 1,
+   "ambiguous": 41
+  },
+  "parse_failure_rate": 0.9767,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1
+  },
+  "universe_digest": "de8d942226500911",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_scsl",
+  "manuscript_chars": 8689,
+  "artifact_keys": 334,
+  "N": 5,
+  "unresolved": 87,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 0,
+   "ambiguous": 87
+  },
+  "parse_failure_rate": 0.9457,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 4,
+   "experimental_execution": 1
+  },
+  "universe_digest": "16b6d4234a97f28c",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_verifai",
+  "manuscript_chars": 6437,
+  "artifact_keys": 86,
+  "N": 1,
+  "unresolved": 21,
+  "by_cause": {
+   "no_candidate": 3,
+   "weak_overlap": 8,
+   "ambiguous": 10
+  },
+  "parse_failure_rate": 0.8182,
+  "not_recorded_rate": 0.1364,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1
+  },
+  "universe_digest": "f5b2004119b00da4",
+  "evaluable": false
+ },
+ {
+  "task": "iclr2025_wsl",
+  "manuscript_chars": 7484,
+  "artifact_keys": 246,
+  "N": 1,
+  "unresolved": 46,
+  "by_cause": {
+   "no_candidate": 0,
+   "weak_overlap": 1,
+   "ambiguous": 45
+  },
+  "parse_failure_rate": 0.9787,
+  "not_recorded_rate": 0.0,
+  "unreadable_declared": 0,
+  "N_by_layer": {
+   "experimental_preparation": 1
+  },
+  "universe_digest": "a9e33a8750a1c7b9",
+  "evaluable": false
+ }
+]

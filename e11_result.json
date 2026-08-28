@@ -1,0 +1,33 @@
+{
+ "nodes": {
+  "results.json.paired_differences": 14,
+  "results.json.summary": 14,
+  "seed_metrics.csv": 14
+ },
+ "usable_nodes": 3,
+ "floor": 10,
+ "kappa": 0.5,
+ "alpha": 0.05,
+ "results": {
+  "M2 (measured)": {
+   "stateless_stop": 2,
+   "stateful_stop": null
+  },
+  "perfect (q=1.0)": {
+   "stateless_stop": 2,
+   "stateful_stop": 3
+  },
+  "partial (q=0.5)": {
+   "stateless_stop": 4,
+   "stateful_stop": null
+  },
+  "weak (q=0.2)": {
+   "stateless_stop": null,
+   "stateful_stop": null
+  },
+  "blind (q=0.0)": {
+   "stateless_stop": null,
+   "stateful_stop": null
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "emitted": 40,
+ "N": 40,
+ "invariant": true,
+ "certificate": {
+  "auditor": "M2",
+  "N": 40,
+  "K": 3,
+  "A": 3,
+  "X": 3,
+  "p": 0.00010121457489878542,
+  "e": 49.69909455915671
+ },
+ "null_accusations": 0,
+ "sufficient": true
+}

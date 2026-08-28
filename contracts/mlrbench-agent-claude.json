@@ -1,0 +1,18 @@
+{
+ "record_contract_version": "1.0",
+ "_arm": "MLR-Agent (MLR-Bench reference agent, claude backend), chchenhui/mlrbench, MIT",
+ "_provenance": "experimenter-supplied; declared by hand from the released directory layout BEFORE any audit of this arm.",
+ "_substrate_caveat": "Captured by the MLR-Bench authors, not by us at a sandbox boundary. Cross-arm comparability resting on a uniform capture boundary does not extend to this arm.",
+ "_holdout_split": "iclr2025_dl4c is the DEVELOPMENT task for the Markdown path; the remaining nine are held out.",
+ "_claim_side": "results/paper_<model>.md -- three manuscripts are written from ONE set of artifacts, which makes generator and evidence separable within a single arm.",
+ "reportable_outputs": [
+  "results/results.md",
+  "claude_code/*.py"
+ ],
+ "excluded_rationale": {
+  "results/paper_*.md": "the claim side, not the artifact side",
+  "claude_output.json": "raw conversation trace; not an aggregate a manuscript cites",
+  "task.md, idea.md, proposal.md, related_work.md": "prose, no artifact-side numbers",
+  "results/*.png": "rendered figures; the numbers behind them are in results.md"
+ }
+}
