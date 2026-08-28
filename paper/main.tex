@@ -66,22 +66,25 @@ Affiliation omitted for anonymous review\\
 Evaluations of autonomous research agents report scores without error rates, and the
 omission is not cosmetic. On a released corpus where three language models wrote up the
 \emph{same} experiment, a published rubric's Overall score moves through \RM{40\%} of its
-observed range under that null perturbation, and the axes describing the experiment move
+observed range under a writer swap that leaves the experiment fixed, and the axes describing the experiment move
 \RM{four times} further than the axes describing the prose. We ask what supplying the
 missing quantity would take. Our construction binds every mechanically checkable claim in an
 agent's manuscript to a key in its own frozen run, plants link-breaking defects uniformly
 over that universe of bindings, and lets the agent's own in-loop adjudicator judge the
 sealed package; because unplanted bindings are named as well, accusations against them form
 a denominator that an accuse-everything adjudicator cannot inflate away, and an exact
-conditional test controls how often a chance-level adjudicator is certified. What the
+conditional test controls how often an adjudicator whose accusations are exchangeable
+with the planted set under the draw is certified. What the
 construction estimates is a detection rate and a false-accusation rate, each with its
 denominator; the $e$-value is the significance guard on them, not a score. We then apply it
 to \RM{58} released runs from \RM{five} external sources across \RM{four}
 independent corpora, and separately to a reference-compliant generator built to test whether
 the requirement is enough. \RM{2} of the \RM{58} released runs clear the recorded
-evaluability floor and \RM{0} can certify at any planting budget: the largest universe any
-of them yields is $N=\RM{12}$, whose best attainable evidence is \RM{15.2} against the
-\RM{20} a stratum needs. That is a statement about their records and not about their
+evaluability floor and \RM{0} can certify under a single planting at any $K$: the largest
+universe any of them yields is $N=\RM{12}$, whose best attainable evidence is \RM{15.2}
+against the \RM{20} a stratum needs. (External arms receive one adjudication each; a
+sequential product across fresh plantings is a different experiment and is not claimed
+here.) That is a statement about their records and not about their
 research: we do not find these agents inaccurate, we find that no error rate --- high or low
 --- can be attached to them. What is common across the five sources is not one failure
 mode but one absence: none marks its claims at cell granularity. Where the resulting loss
@@ -145,7 +148,7 @@ are measured on \RM{58} released external runs from \RM{five} sources and
 catalogue, planting law, freeze manifest and capture layer, so a second
 benchmark can be built without our substrate.
 \item[\textbf{C4}] \textbf{A recording contract in three faces --- the minimum
-set of claim--artifact pairs an agent must record before \emph{any} error rate
+set of claim--artifact pairs an agent must record before a \emph{design-based} error rate
 can attach to it.} We state it as a requirement with partial existing
 implementations \cite{symposium,ara} rather than as an invention; its third face,
 claim marking at cell granularity, was arrived at by watching two of those
@@ -172,7 +175,8 @@ Our claim is narrower than any of these and is the only one we make:
 in-loop adjudicator, obtained from a denominator that unplanted slots supply,
 with false certification controlled at $\alpha$ by an exact conditional test},
 together with the substrate conditions under which any of it can be obtained.
-The test controls how often a chance-level adjudicator is certified; it does not
+The test controls how often an adjudicator whose accusations are exchangeable with the
+planted set under the draw is certified; it does not
 give the probability that a particular judgement is wrong, and we do not claim
 it does.
 
@@ -196,9 +200,9 @@ non-transferable: the gate is fitted to the thing it gates.
 \textbf{Family 2: the benchmarks, which are what this paper competes with.}
 A benchmark for research agents can be asked three things: how much of the
 research pipeline it reaches, whether it runs without per-paper expert
-annotation, and whether the judgements it issues carry an error rate. No
-existing benchmark answers all three, and the third is where they converge on
-the same substitute.
+annotation, and whether the judgements it issues carry an error rate. None of the
+four benchmarks in Table~\ref{tab:benchcmp} answers all three, and the third is
+where those that do issue judgements converge on the same substitute.
 
 \begin{table}[t]
 \centering\small
@@ -238,10 +242,10 @@ design gives one conditional on a draw we control. PaperBench measures its judge
 reports $F_1=0.83$ on a held-out set of expert-graded submissions --- and
 that number describes the judge on that set, not the error rate of any score
 the benchmark publishes. AstaBench states plainly that confidence intervals are
-omitted. A rubric cannot do better: it has no ground truth against which a
-judgement could itself be scored wrong, and \S\ref{sec:resultsec} prices what
-that costs --- identical experiments written by three models move Overall by a
-median of \RM{2.0}. The wider family is large and growing --- whole-pipeline
+omitted. A rubric used without independent reference labels cannot estimate the
+error of its own judgements on the instance it is scoring, and
+\S\ref{sec:resultsec} prices what that costs --- identical experiments written by
+three models move Overall by a median of \RM{2.0}. The wider family is large and growing --- whole-pipeline
 instances \cite{rcb,researchgym2026} alongside
 \cite{huang2024mlagentbench,chen2025scienceagentbench,fire2026}, and across it the reported quantity is task outcome. Reading the
 manuscript more closely does not help either: fact-level checkers
@@ -530,9 +534,10 @@ $M^v_N = \prod_{n \le N} e^v_n$.
 \begin{quote}
 \textbf{Proposition A (protocol conditions for anytime validity).} Suppose
 (i) $P_n$ is drawn before replicate $n$'s adjudication, (ii) the package is
-sealed before adjudication, and (iii) the adjudicator is run \emph{statelessly}
-across replicates. Then $A_n$ depends on the past only through $P_n$, which is
-Assumption 3.1 of \cite{stoppedebh}. By their Theorem 3.3 each $M^v_N$ is a
+sealed before adjudication, and (iii) conditional on $P_n$, the accusation set
+$A_n$ is drawn from a fixed kernel $Q(\cdot\mid P_n)$ with fresh randomness
+independent of the prior global filtration. Then $A_n$ depends on the past only
+through $P_n$, which is Assumption 3.1 of \cite{stoppedebh}. By their Theorem 3.3 each $M^v_N$ is a
 nonnegative supermartingale on the \emph{global} filtration, so every $M^v$ is
 an e-process there and stopping all of them at a common stopping time yields
 e-values, so e-BH controls FDR over the nodes of $T$ there.
@@ -540,15 +545,18 @@ e-values, so e-BH controls FDR over the nodes of $T$ there.
 
 \noindent The proof is theirs; what is ours is that (i)--(iii) are properties of
 a protocol rather than assumptions about data, so they can be enforced and
-audited rather than hoped for. \textbf{The converse is the operative half.} An
-agent's in-loop adjudicator is stateful by construction --- carrying context
-across calls is what makes it in-loop --- and a stateful adjudicator violates
-(iii): $A_n$ then depends on replicates $1..n-1$ other than through $P_n$,
-information leaks backwards across the sequence, and each $M^v$ is an e-process
-only in its own local filtration. Stopping on a global rule is then invalid,
-and \cite{stoppedebh} exhibit that failure. A benchmark that queries the
-adjudicator incrementally, which is the cheaper and more obvious design, forfeits
-the anytime guarantee it appears to gain.
+audited rather than hoped for. \textbf{What fails when (iii) fails is the
+operative half.} An agent's in-loop adjudicator typically carries context across
+calls --- that is what makes it in-loop --- and when that context makes the
+conditional law of $A_n$ given $P_n$ depend on prior replicates, (iii) is
+violated: information leaks backwards across the sequence, and the cited theorem
+no longer establishes that each $M^v$ is an e-process on the global filtration.
+(Validity on any smaller filtration would need its own argument; failure of the
+global one does not imply a local one.) Stopping on a global rule is then
+unjustified, and \cite{stoppedebh} exhibit that failure mode. A benchmark that
+queries the adjudicator incrementally, which is the cheaper and more obvious
+design, forfeits the anytime guarantee it appears to gain --- unless it reseals
+context per replicate, which is exactly condition (iii).
 
 \paragraph{What adaptive descent costs.} Column~4 asks for the first stage to
 break, which is a top-down search: test a node, descend only where evidence
@@ -560,16 +568,19 @@ price of an admissible adjuster such as $A(E)=\sqrt{E}-1$.
 
 \begin{quote}
 \textbf{Proposition B (the price of descending adaptively).} Under
-(i)--(iii), synchronous stopping --- one stopping time shared by all nodes ---
-needs no adjuster. Adaptive descent, in which a node's audit may stop while a
-sibling's continues, requires the adjusted running maximum, and the evidence
-retained is $A(E)$ rather than $E$.
+(i)--(iii), any family of node-wise stopping times --- including synchronous
+stopping and adaptive descent, in which a node's audit may stop while a
+sibling's continues --- yields e-values to which e-BH applies directly. What
+requires the adjusted running maximum is reporting $\sup_t M^v_t$ or any other
+non-stopping selection of the time; the evidence retained is then $A(E)$ rather
+than $E$.
 \end{quote}
 
-\noindent So the localisation column is purchasable and its price is a square
-root of the evidence. That is a design choice a benchmark should state rather
-than discover: with adjudicator calls as the scarce resource, adaptive descent
-pays for itself; with evidence as the scarce resource, it does not.
+\noindent So the localisation column is purchasable under either regime; the
+running-maximum regime's price is a square root of the evidence. That is a
+design choice a benchmark should state rather than discover: with adjudicator
+calls as the scarce resource the adjuster is cheap, with evidence as the scarce
+resource it is not.
 
 \subsection{Stratification}
 \label{sec:layers}
@@ -688,7 +699,7 @@ nothing planted. What separates them is a distribution, not a floor:
 The negative control belongs to that second adjudicator, and it is not clean: over
 \RM{5} replicates with nothing planted it accused \RM{0} slots on four and
 \RM{2} on the fifth. Both are false accusations, and neither is evidence --- with
-$K=0$ there is nothing to hit, so $X=0$ and $e=\RM{1}$ however many slots are
+$K=0$ there is nothing to hit, so $X=0$, $p=\RM{1}$ and $e=\kappa=\RM{0.5}$ however many slots are
 named. A design that could not accuse under the null would be the stronger
 result; what we can report is that accusing under the null never produced one.
 Appendix~\ref{app:validation} gives both sweeps and the ordering-recovery check.
@@ -706,7 +717,7 @@ either movement could be judged.}
 
 \textbf{A published rubric is writer-dominated, and inverted.} MLR-Bench
 generates three manuscripts per run from identical experiments, code and
-artifacts. Under that null perturbation its Overall score moves by a median of
+artifacts. Under that writer swap its Overall score moves by a median of
 \RM{2.0} and a maximum of \RM{3.5} on a corpus spanning 2.5--7.5, and
 the axes describing the experiment --- Soundness, Significance --- move
 \RM{2.0} where the axes describing the prose --- Clarity, Novelty --- move
@@ -840,14 +851,18 @@ $K=\RM{10}$  & \RM{26\%} & \RM{15\%} & \RM{6\%}  & \RM{6\%}  \\
 \end{tabular}
 \end{center}
 
-\noindent \textbf{Past three replicates, resolution is bought with planting
-budget and not with runs.} With $K=\RM{3}$ the hit count is one of
-$\{0,1,2,3\}$, so the detection rate is quantised at thirds: the bar falls from
-\RM{50\%} at one replicate to \RM{17\%} at three and then stops, unchanged at
-\RM{20}. The quantisation is what stops it --- more runs of a three-way outcome
-do not subdivide the outcome. Where $K$ is large enough for that to bite later,
-replicates keep paying: at $K=\RM{10}$ the bar falls \RM{26\%}, \RM{15\%},
-\RM{6\%} across one, three and five replicates. Our concealment sweep used $K=\RM{3}$ with \RM{5} replicates, which means
+\noindent \textbf{Past three replicates, under the deterministic rule used here,
+resolution is bought with planting budget and not with runs.} With $K=\RM{3}$ the
+hit count is one of $\{0,1,2,3\}$, so under the calculation that sets
+$X=\lceil qK\rceil$ per replicate the bar falls from \RM{50\%} at one replicate
+to \RM{17\%} at three and then stops, unchanged at \RM{20}. That plateau is a
+property of this rule, not an information-theoretic limit: a stochastic analysis
+of the frequency of hits across replicates can resolve detection probabilities
+below one third. Where $K$ is larger the same deterministic rule keeps paying
+with replicates for longer: at $K=\RM{10}$ the bar falls \RM{26\%}, \RM{15\%},
+\RM{6\%} across one, three and five replicates. The table is computed at the
+development $N=\RM{159}$ and $\alpha=\RM{0.05}$; it is a minimum-detectable-$q$
+chart under that rule, not a Monte-Carlo power curve. Our concealment sweep used $K=\RM{3}$ with \RM{5} replicates, which means
 it could only ever resolve ``catches at least one of three''. Reporting that M1
 does not certify at any concealment level therefore says M1 did not reliably
 reach even that, and it says nothing finer. At $K=\RM{10}$ and the same
@@ -900,7 +915,8 @@ resolve a universe at all, and even they resolve one manuscript in seven.}
 
 Table~\ref{tab:arms} is the paper's central measurement: of \RM{58} released
 external runs across \RM{five} sources and \RM{four} corpora, \RM{2} clear the
-recorded floor and \RM{0} can certify at any planting budget (\S\ref{sec:floor}). AI Scientist-v2 records its settings only
+recorded floor and \RM{0} can certify under a single planting at any $K$
+(\S\ref{sec:floor}). AI Scientist-v2 records its settings only
 inside a source string --- median $N=\RM{2}$, parse failure \RM{95.2\%} at the median, and
 by \S\ref{sec:board}'s own rule that attribution is ours. MLR-Agent, same corpus
 and tasks but results written as tables, reaches median $N=\RM{3}$ and a maximum
@@ -1406,10 +1422,11 @@ MLR-Agent arms, \texttt{ARA-Labs/Agent-Native-Research-Artifact} (MIT), the AI
 Scientist-v1 release, and the ICML-2026 reproduction challenge submissions
 published on the Hugging Face Hub --- each used at the commit or revision
 recorded in the artifact manifest; the seven development substrates and their
-frozen scope declarations ship with the code. The instrument is frozen by a
-manifest of file digests, thresholds, the assertion catalogue and the universe
-digest, and a \texttt{--verify} mode fails if any of them has moved since the
-first external arm was run. The preregistration for the cross-benchmark test
+frozen scope declarations ship with the code. The accompanying code and measured outputs are at
+\url{https://github.com/Biajin-PKU/scirigorbench-artifacts}. The
+instrument is frozen by a manifest of file digests, thresholds, the assertion
+catalogue and the universe digest, and a \texttt{--verify} mode fails if any of
+them has moved since the first external arm was run. The preregistration for the cross-benchmark test
 (Appendix~\ref{app:e8}) carries the commit hash that timestamps it. Where a
 third-party artifact is not redistributable we say so rather than ship a copy.
 
@@ -1485,37 +1502,41 @@ supermartingale on the global filtration, so it is an e-process there, and
 stopping all nodes at one common stopping time yields e-values.
 \end{proof}
 
-\paragraph{Where the converse bites.} Step (ii) is what forbids a side channel
-between planting and adjudication, and step (iii) is what an agent's own in-loop
-checker violates: if the adjudicator carries state, $A_n$ is measurable with
-respect to $\sigma(P_n,\omega_n,\mathcal H_{n-1})$ for
-$\mathcal H_{n-1}=\sigma(Q_1,A_1,\dots,Q_{n-1},A_{n-1})$, the pair
-$(A_n,P_n)$ is no longer independent of the past, and conditioning on $A_n$ can
-couple $P_n$ to it. Assumption~3.1 fails, and by the discussion in
-\cite{stoppedebh} each $M^v$ is then an e-process only in its own local
-filtration; stopping on a global rule is not justified. Statelessness is
-therefore not a modelling convenience but the condition that makes the
-sequential audit legitimate, and it is checkable: run the adjudicator in a
-fresh context per replicate and record the fact in the freeze manifest.
+\paragraph{Where (iii) fails.} Step (ii) is what forbids a side channel between
+planting and adjudication. Step (iii) fails when the conditional law of $A_n$
+given $P_n$ still depends on prior replicates: if the adjudicator's state makes
+$A_n$ measurable with respect to $\sigma(P_n,\omega_n,\mathcal H_{n-1})$ for
+$\mathcal H_{n-1}=\sigma(Q_1,A_1,\dots,Q_{n-1},A_{n-1})$, the pair $(A_n,P_n)$
+is no longer independent of the past, and conditioning on $A_n$ can couple $P_n$
+to it. Assumption~3.1 then fails, and the cited theorem no longer establishes
+that each $M^v$ is an e-process on the global filtration; validity on any
+smaller filtration would need a separate argument. Stopping on a global rule is
+not justified under those conditions alone. Statelessness --- a fresh context
+per replicate, recorded in the freeze manifest --- is therefore not a modelling
+convenience but the checkable condition that makes the sequential audit
+legitimate.
 
 \begin{quote}
-\textbf{Proposition B.} Under (i)--(iii), a single stopping time shared by all
-nodes needs no adjuster. If instead each node may stop at its own
-data-dependent time --- which top-down localisation requires, since a node's
-audit halts when a sibling's continues --- then e-BH applied to the running
-maxima does not control FDR \cite{carefree}; applying an admissible adjuster
-$A$ to those maxima restores FDR-sup control at level $K_0\alpha/K$ by their
-Theorem~1, and the evidence carried forward is $A(E)$ rather than $E$.
+\textbf{Proposition B.} Under (i)--(iii), any family of node-wise stopping times
+yields e-values on which e-BH controls FDR directly, whether the times are
+shared or node-specific. What fails without an adjuster is e-BH on
+\emph{running maxima} $\sup_t M^v_t$ (or any non-stopping selection of the
+time) \cite{carefree}; applying an admissible adjuster $A$ to those maxima
+restores FDR-sup control at level $K_0\alpha/K$ by their Theorem~1, and the
+evidence carried forward is $A(E)$ rather than $E$. Top-down localisation can
+be run either way: stop each node at a stopping time and keep $E$, or report a
+running maximum and keep $A(E)$.
 \end{quote}
 
 \begin{proof}
 Immediate from \cite{carefree}: their Corollary~1 gives the failure for e-BH and
 closed e-BH on unadjusted running maxima, and their Theorem~1 gives FDR-sup
 control after adjustment. Neither step is ours; what Proposition~B records is
-which of the two regimes a benchmark is in once it decides whether to localise.
-With $A(E)=\sqrt{E}-1$ the retained evidence is the square root of the
-unadjusted value, so localisation is affordable exactly when adjudicator calls,
-not evidence, are the binding constraint.
+which of the two reporting regimes a benchmark is in once it decides to
+localise --- stopping times keep $E$, running maxima keep $A(E)$. With
+$A(E)=\sqrt{E}-1$ the retained evidence is the square root of the unadjusted
+value, so the running-maximum regime is affordable exactly when adjudicator
+calls, not evidence, are the binding constraint.
 \end{proof}
 
 \section{Stratified draw}
@@ -1866,7 +1887,7 @@ practice this paper exists to object to.
 certificate must not fire at $K=0$. On the development arm, over \RM{5}
 re-measured replicates with nothing planted, the manuscript-only adjudicator
 accused \RM{0} slots on four and \RM{2} inside the universe of \RM{159} on the
-fifth; $X=\RM{0}$ and $e=\RM{1}$ throughout, so the certificate never fires, but
+fifth; $X=\RM{0}$, $p=\RM{1}$ and $e=\kappa=\RM{0.5}$ throughout, so the certificate never fires, but
 the accusation rate does not fall to zero under the null
 (\S\ref{sec:e4}). On the external arms it fires on \emph{every} bound slot ---
 \RM{0} of the scoreable runs clean at the time of the check, and inspecting the
@@ -1992,7 +2013,7 @@ With nothing planted, M1 keeps accusing: \RM{1} to \RM{9} accusations over
 universe. An earlier revision reported \RM{2} replicates on which every
 accusation landed outside it, and read that as a clean control; it was the
 smaller sample. Neither version is evidence in the technical sense --- at $K=0$
-there is nothing to hit, so $X=\RM{0}$ and $e=\RM{1}$ however many slots are
+there is nothing to hit, so $X=\RM{0}$, $p=\RM{1}$ and $e=\kappa=\RM{0.5}$ however many slots are
 named --- but the accusation rate does not fall to zero when the fabrication
 does. At small $\delta$ the unmapped rate rises to \RM{75--100\%}: the
 accusation count does not fall, the hits do. \textbf{This is exactly what only a

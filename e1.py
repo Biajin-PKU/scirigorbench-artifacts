@@ -51,6 +51,7 @@ def hyper_sf(x, N, K, A):
 
 
 def calibrate(p):
+    """Vovk-Wang: e = κ p^{κ-1}. At p=1 (including K=0) this is κ, not 1."""
     return KAPPA * max(float(p), 1e-12) ** (KAPPA - 1)
 # -----------------------------------------------------------------------------
 
@@ -82,7 +83,7 @@ def certify(universe_names, planted_names, accused, label):
     X = len(accused & set(planted_names))
     p = float(hyper_sf(X, N, K, min(A, N)))
     return {"auditor": label, "N": N, "K": K, "A": A, "X": X,
-            "p": p, "e": calibrate(p) if K else 1.0}
+            "p": p, "e": calibrate(p)}
 
 
 def topics_with_substrate():
@@ -98,7 +99,7 @@ def topics_with_substrate():
 def contract_for(topic, default):
     """Per-run contract when one exists.  D3 face B is declared per arm, and a
     declaration written for one run's file layout does not fit another's."""
-    c = pathlib.Path(f"contracts/substrate-topic{topic}.json")
+    c = pathlib.Path(f"contracts/arena-substrate-topic{topic}.json")
     return json.loads(c.read_text()) if c.exists() else default
 
 
