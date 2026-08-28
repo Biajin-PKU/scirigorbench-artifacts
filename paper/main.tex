@@ -453,7 +453,7 @@ side and can be re-serialised after the fact; C constrains the claim side and
 cannot, because nothing in an unmarked manuscript distinguishes the number
 reporting one cell from the number reporting another except the number itself,
 and a universe derived from values is a function of the labelling, which
-Appendix~\ref{sec:slots} forbids. Auditability is therefore a property of generation,
+Appendix~\ref{sec:slots} forbids. Under that information constraint, auditability is a property of generation,
 not of evaluation. \S\ref{sec:resultsec} tests each of these claims against
 released runs.
 
@@ -584,9 +584,11 @@ resource it is not.
 
 \subsection{Stratification}
 \label{sec:layers}
-The draw is stratified so that every $K_\ell$ is fixed, which is the premise the
-adopted per-stage test is conditional on; a pooled draw would make each $K_\ell$
-random and force us to re-derive the machinery we are adopting. Layers are the
+The draw is stratified so that every $K_\ell$ is fixed, matching the premise the
+adopted per-stage test is written under. A pooled draw would make each $K_\ell$
+random; the hypergeometric step would still be valid conditional on the realised
+$K_\ell$, but we would no longer be running the companion test as published, and
+this paper's claim is adoption rather than re-derivation. Layers are the
 six research stages \cite{sixstage}, taken rather than invented, and an
 assertion belongs to the stage it \emph{speaks about}. Stratifying does not make
 the stages independent --- one adjudicator sees the whole package --- and we
@@ -1039,7 +1041,7 @@ becomes attainable. We report the frozen value because it is what was frozen and
 this derivation because it is what the frozen value should have been; a floor
 chosen after seeing the arms would have been worth nothing either way.
 
-\subsubsection{A community corpus, where every submission fails a different face}
+\subsubsection{A community corpus exhibiting three distinct failure modes}
 \label{sec:e19}
 The four agent arms are four releases by four teams. The fifth corpus is not:
 the ICML 2026 agent reproduction challenge asks participants to publish a
@@ -1227,8 +1229,9 @@ value matches the cell named & \multicolumn{2}{c}{\RM{96/96}} \\
 apart.} Over these five tasks the recovery arm verifies \RM{6} bindings and the
 emission arm \RM{96}. The only difference is when the marking is written. Recovering it
 afterwards leaves the model matching numerals, which \S\ref{sec:e5} shows the
-acceptance test forbids; emitting it while writing costs nothing, because the
-key is already in front of the writer. Every one of the \RM{96} bindings it
+acceptance test forbids; emitting it while writing adds only the tokens of the
+key itself, which is already in front of the writer, and caused no measured loss
+in binding coverage. Every one of the \RM{96} bindings it
 emitted survived the audit --- the key resolved, the value appeared in its
 prose, and the value matched the cell.
 
@@ -1266,11 +1269,12 @@ agent's tip $+$ contract clause, bound        & \RM{16} & \RM{28}, \RM{40} & \RM
 \end{center}
 
 \noindent \textbf{The clause is free at \RM{16} cells and decisive at \RM{48}.}
-With a small index almost every printed numeral matches exactly one cell, so
-value matching recovers everything and the clause changes nothing. As the index
-grows the matches collide and value matching collapses --- \RM{2} of \RM{40},
-\RM{4} of \RM{48} --- while the marked arm binds every cell it was given, at
-every size. The retrofit that \S\ref{sec:e5} rules out on principle therefore
+These are different papers, not controlled enlargements of one index, so the
+comparison is an association across artifact sizes rather than a causal effect of
+size alone. With a small index almost every printed numeral matches exactly one
+cell, so value matching recovers everything and the clause changes nothing. At
+the larger indexes value matching collapses --- \RM{2} of \RM{40}, \RM{4} of
+\RM{48} --- while the marked arm binds every cell it was given, at every size. The retrofit that \S\ref{sec:e5} rules out on principle therefore
 also fails in practice, and it fails exactly where it would start to matter:
 a universe small enough for value matching to work is a universe too small to
 certify (\S\ref{sec:floor}).
@@ -1438,11 +1442,17 @@ third-party artifact is not redistributable we say so rather than ship a copy.
 \label{app:hierseq_proof}
 
 \paragraph{Notation.} Replicates are indexed $n=1,2,\dots$. The trace $\tau$ is
-frozen once and shared by all replicates. For replicate $n$ we draw a planted
-set $P_n$, taking $K_v$ slots uniformly from each node universe $U_v$
-independently across $v$ and across $n$; $Q_n=\mathrm{seal}(\tau,P_n)$ is the
-hashed package; the adjudicator returns $A_n$. Write $A^v_n=A_n\cap U_v$,
-$P^v_n=P_n\cap U_v$, $X^v_n=|A^v_n\cap P^v_n|$ and $a^v_n=|A^v_n|$.
+frozen once and shared by all replicates. The nodes we certify against are of
+two kinds, and the draw is defined so that each node's planted set is a uniform
+subset of its own universe. \emph{Stage nodes} partition $\Phi$ by assertion
+type, so the $U_\ell$ are disjoint; for replicate $n$ we draw $K_\ell$ slots
+uniformly from each non-empty $U_\ell$ independently across $\ell$ and $n$, and
+set $P_n=\bigcup_\ell P^\ell_n$. \emph{Containment nodes} of the workflow tree
+nest, so independent draws on overlapping $U_v$ would not yield a single $P_n$;
+there we plant only at the leaves and define a parent's planted set as the
+union of its children's. $Q_n=\mathrm{seal}(\tau,P_n)$ is the hashed package;
+the adjudicator returns $A_n$. Write $A^v_n=A_n\cap U_v$, $P^v_n=P_n\cap U_v$,
+$X^v_n=|A^v_n\cap P^v_n|$ and $a^v_n=|A^v_n|$.
 
 The null at node $v$ is design-based:
 \[
@@ -1534,9 +1544,9 @@ closed e-BH on unadjusted running maxima, and their Theorem~1 gives FDR-sup
 control after adjustment. Neither step is ours; what Proposition~B records is
 which of the two reporting regimes a benchmark is in once it decides to
 localise --- stopping times keep $E$, running maxima keep $A(E)$. With
-$A(E)=\sqrt{E}-1$ the retained evidence is the square root of the unadjusted
-value, so the running-maximum regime is affordable exactly when adjudicator
-calls, not evidence, are the binding constraint.
+$A(E)=\sqrt{E}-1$ the retained evidence is $\sqrt{E}-1$, so the
+running-maximum regime is affordable exactly when adjudicator calls, not
+evidence, are the binding constraint.
 \end{proof}
 
 \section{Stratified draw}
@@ -1668,7 +1678,8 @@ B: artifact scope & which outputs may be cited & \RM{yes} (E5) \\
 \end{tabular}
 \end{center}
 
-\noindent \textbf{Auditability is therefore a property of generation, not of
+\noindent \textbf{Under the information available to an automatic matcher,
+auditability is a property of generation, not of
 evaluation.} No amount of post-hoc processing recovers it: an evaluation
 protocol cannot buy this, only the agent can supply it, and it must supply it
 while writing.
@@ -1778,7 +1789,7 @@ App.~\ref{app:attribution} & coverage attribution, tie structure & \RM{measured}
 \S\ref{sec:e11} & hierarchy exercisability & \RM{measured} & \texttt{e11.py} \\
 \S\ref{sec:e19} & community reproduction corpus & \RM{measured} & 5 runs, \texttt{arms/icml\_repro.py} \\
 \S\ref{sec:e4} & rubric stability under a writer swap & \RM{measured} & \texttt{e4.py}, released judge scores \\
-\S\ref{sec:e7} & universe padding against the certificate & \RM{measured} & \texttt{e7.py}, exact \\
+\S\ref{sec:e7} & universe padding against the certificate & \RM{derived} & \texttt{e7.py}, exact arithmetic \\
 \S\ref{sec:e8} & preregistered cross-benchmark test & \RM{VOID} & \texttt{e8.py}, by its own rule \\
 E9 & can claim marking be retrofitted & \RM{no} & \texttt{e9.py}, acceptance test fails \\
 \S\ref{sec:e10} & is the requirement sufficient & \RM{yes} & \texttt{e10.py}, reference generator \\
@@ -1838,7 +1849,7 @@ Development arm, one substrate & without contract & with contract \\
 \midrule
 artifact keys & \RM{299{,}345} & \RM{3{,}430} \\
 universe size $N$ & \RM{6} & \RM{159} \\
-$\Phi$ coverage & --- & \RM{44.0\%} \\
+$\Phi$ coverage & --- & \RM{42.7\%} \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -2052,7 +2063,9 @@ rung & declared outputs & resolvable slots & median $e$ & $A=K$ \\
 rather than assumed, and the ladder is \RM{monotone non-increasing}. Two things
 follow. The certificate separates conditions we constructed by hand, so the
 instrument is not eliminated. And because the four rungs receive the same
-manuscript \emph{object}, any function of the manuscript alone returns one value
+manuscript \emph{object}, any function of the manuscript alone has the same
+input and, absent rung information, the same output distribution --- a
+deterministic reader returns one value
 for all of them: a method that reads the finished paper is blind to this
 difference as arithmetic, not as a measurement. This is the pre-registered
 criterion by which a disagreement with an existing benchmark is attributed to
@@ -2087,7 +2100,8 @@ $A_\ell = |A \cap U_\ell|$ and $X_\ell = |A \cap P_\ell|$ for $P_\ell$ the
 planted subset of stage $\ell$.
 
 \begin{quote}
-\textbf{Proposition (applicability).} Under $H_0^\ell$ --- that the
+\textbf{Proposition (applicability).} Fix $\kappa\in(0,1)$ (this paper uses the
+preregistered value $\kappa=\RM{0.5}$). Under $H_0^\ell$ --- that the
 adjudicator's accusations within stage $\ell$ are independent of which slots of
 $U_\ell$ were planted --- the quantity $e_\ell = \kappa\, p_\ell^{\kappa-1}$
 with $p_\ell = \Pr[\mathrm{Hyp}(N_\ell,K_\ell,A_\ell) \ge X_\ell]$ is a valid
@@ -2106,18 +2120,23 @@ the coupling a single adjudicator induces between stages needs no description.
 dependence here is real, we cannot honestly characterise it, and $e$-values are
 the instrument that does not ask us to.
 
-\paragraph{Two premises that are ours to keep.} First, $K_\ell$ must be
-\emph{fixed}, which is what stratifying the draw buys: pooling makes each
-$K_\ell$ random and the conditional hypergeometric step fails, forcing this
-paper to re-derive within-stage machinery it is supposed to be adopting.
+\paragraph{Two premises that are ours to keep.} First, $K_\ell$ is
+\emph{fixed by the draw}, which is what stratifying buys and what the companion
+test is written under. Pooling would make each $K_\ell$ random; the
+hypergeometric step would remain valid conditional on the realised $K_\ell$, but
+we would no longer be running the companion test as published, and this paper's
+claim is adoption rather than re-derivation.
 Second, $H_0^\ell$ is a statement about the adjudicator rather than about the
 agent --- it says the accusations carry no information about the planting, and
 an adjudicator that accuses everything satisfies it exactly, which is the
 property the denominator exists to exploit.
 
 \paragraph{What it does not give.} False-discovery control over stages is not a
-per-stage error rate for an individual verdict; that is the marginal
-$e$-value, and it is what the leaderboard reports. And no statistical statement
+per-stage error rate for an individual verdict. The leaderboard's stagewise
+entry is the marginal $e$-value --- evidence against the stage null with
+expectation at most one under it, not an error probability --- and the
+decision rule is the threshold $e\ge 1/\alpha$ with false-certification control
+at $\alpha$. And no statistical statement
 licenses the null itself: if the universe is mis-extracted, every quantity above
 is computed on the wrong object, which \S\ref{sec:firstarm} shows is not a
 hypothetical.
