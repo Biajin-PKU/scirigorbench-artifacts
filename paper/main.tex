@@ -719,9 +719,8 @@ artifacts. Under that writer swap its Overall score moves by a median of
 \RM{2.0} and a maximum of \RM{3.5} on a corpus spanning 2.5--7.5, and
 the axes describing the experiment --- Soundness, Significance --- move
 \RM{2.0} where the axes describing the prose --- Clarity, Novelty --- move
-\RM{0.5} (Figure~\ref{fig:e4}). We are not entitled to call the rubric wrong,
-and neither is it: with no error bar there is no quantity against which a
-movement can be judged. The fragility is not ours alone to report --- rubric
+\RM{0.5} (Figure~\ref{fig:e4}). With no error bar there is no quantity against
+which a movement can be judged. The fragility is not ours alone to report --- rubric
 judges are independently documented to carry position bias \cite{more2026} and
 to disagree with human reference in ways their own reports do not surface
 \cite{when2026}. Our own $N$ moves too, disagreeing about the best
@@ -1336,14 +1335,12 @@ the \RM{23} a universe needs to carry evidence at $K=\RM{3}$. We defend that the
 bound, and no further --- a reader who believes a different extractor would
 find it is asking for an experiment we ran and reported.
 
-\textbf{The column we propose is not yet safe to publish as specified.} Padding
-the universe with trivially checkable claims multiplies the certificate by
-\RM{178} without catching one additional planted defect, and nothing in that
-attack requires an arm to lie. Any leaderboard that ranks by the raw $e$-value
-under this planting law would reward universe inflation. The fix --- a
-size-invariant estimate with the $e$-value retained as a significance guard ---
-is stated in \S\ref{sec:resultsec} and not implemented, so the four-column board this
-construction is meant to support remains a design rather than a result.
+\textbf{The column we propose is not yet safe to publish as a raw-$e$ ranking.}
+Padding multiplies $e$ by \RM{178} with no extra detection (\S\ref{sec:e7}); any
+board that ranks by raw $e$ under this planting law would reward that. The
+size-invariant rates of \S\ref{sec:rates} are the publishable column; a
+four-column board built on them remains a design rather than a result until an
+arm clears the floor.
 
 \textbf{The construction applies to agents that record results as data.} We
 designed for calibration not transferring between agents; \S\ref{sec:firstarm}
@@ -1362,15 +1359,12 @@ construction that supplies the missing quantity, and this paper is the
 measurement of what it costs on what has been released.
 
 \textbf{The cost is a property of how a manuscript is written, not of how it is
-evaluated.} A denominator needs to know which artifact cell each printed number
-reports, and that is the one requirement no evaluation protocol can supply for
-itself: an unmarked manuscript offers only the value, and a universe derived
-from values dissolves under the planting it is supposed to withstand. Across \RM{58} released runs, five sources and four independent
-corpora, no arm marks its claims at cell granularity --- including the corpus
-purpose-built for auditing, which marks them at file granularity instead. The
-failures are not interchangeable: \S\ref{sec:firstarm} separates the arm whose
-record our matcher cannot read from the arm whose run did not record the
-subject.
+evaluated.} A denominator needs the artifact cell each printed number reports;
+an unmarked manuscript offers only the value, and a universe derived from values
+dissolves under the planting it is supposed to withstand. Across \RM{58}
+released runs from five sources and four corpora, none marks claims at cell
+granularity --- \S\ref{sec:firstarm} separates matcher-side from record-side
+loss --- so no design-based rate can attach.
 
 \textbf{Two findings survive without any of this being adopted}
 (\S\ref{sec:e4}, \S\ref{sec:e7}): the writer-swap movement of a published rubric,
