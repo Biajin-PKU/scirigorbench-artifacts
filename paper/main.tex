@@ -68,15 +68,15 @@ omission is not cosmetic. On a released corpus where three language models wrote
 \emph{same} experiment, a published rubric's Overall score moves through \RM{40\%} of its
 observed range under a writer swap that leaves the experiment fixed, and the axes describing the experiment move
 \RM{four times} further than the axes describing the prose. We ask what supplying the
-missing quantity would take. Our construction binds every mechanically checkable claim in an
-agent's manuscript to a key in its own frozen run, plants link-breaking defects uniformly
-over that universe of bindings, and lets the agent's own in-loop adjudicator judge the
-sealed package; because unplanted bindings are named as well, accusations against them form
-a denominator that an accuse-everything adjudicator cannot inflate away, and an exact
-conditional test controls how often an adjudicator whose accusations are exchangeable
-with the planted set under the draw is certified. What the
-construction estimates is a detection rate and a false-accusation rate, each with its
-denominator; the $e$-value is the significance guard on them, not a score. We then apply it
+missing quantity would take. We introduce \textsc{SciRigorBench}, a construction that binds
+every mechanically checkable claim in an agent's manuscript to a key in its own frozen run,
+plants link-breaking defects uniformly over that universe of bindings, and lets the agent's
+own in-loop adjudicator judge the sealed package; because unplanted bindings are named as
+well, accusations against them form a denominator that an accuse-everything adjudicator
+cannot inflate away, and an exact conditional test controls how often an adjudicator whose
+accusations are exchangeable with the planted set under the draw is certified. What it
+estimates is a detection rate and a false-accusation rate, each with its denominator; the
+$e$-value is the significance guard on them, not a score. We then apply it
 to \RM{58} released runs from \RM{five} external sources across \RM{four}
 independent corpora, and separately to a reference-compliant generator built to test whether
 the requirement is enough. \RM{2} of the \RM{58} released runs clear the recorded
@@ -126,6 +126,11 @@ The one holding the artifacts recovers every planted claim on every draw; the on
 reading the finished paper recovers a median of \RM{1} in \RM{3}, and on some
 draws recovers all \RM{3}. What the artifacts buy is not a higher score --- it is
 the removal of the draw from the answer.
+
+\paragraph{\textsc{SciRigorBench}.} The rest of this paper is the construction that
+turns that observation into a certificate with a denominator, priced rather than
+asserted, and the measurement of what released research-agent corpora yield under
+it.
 
 \paragraph{Contributions.}
 \begin{itemize}\itemsep2pt
@@ -197,7 +202,7 @@ never what it missed. That is the right engineering choice for a component whose
 job is to improve one pipeline, and exactly what makes the numbers
 non-transferable: the gate is fitted to the thing it gates.
 
-\textbf{Family 2: the benchmarks, which are what this paper competes with.}
+\textbf{Family 2: the benchmarks, which are what \textsc{SciRigorBench} competes with.}
 A benchmark for research agents can be asked three things: how much of the
 research pipeline it reaches, whether it runs without per-paper expert
 annotation, and whether the judgements it issues carry an error rate. None of the
@@ -220,7 +225,7 @@ MLR-Bench \cite{mlrbench}
 AstaBench \cite{asta2025}
  & research suite & yes, rubrics per task & confidence intervals omitted \\
 \midrule
-this paper & any stage the run exposes & no & detection and false-accusation
+\textsc{SciRigorBench} & any stage the run exposes & no & detection and false-accusation
 rates, per stage \\
 \bottomrule
 \end{tabular}
@@ -1362,8 +1367,9 @@ evaluator cannot read is what the agent did not mark.
 
 \section{Conclusion}
 An agent's own gate decides what ships, and it has never been measured; public
-benchmarks measure the output and not the gate. We built the missing quantity
-and then measured what it costs.
+benchmarks measure the output and not the gate. \textsc{SciRigorBench} is the
+construction that supplies the missing quantity, and this paper is the
+measurement of what it costs on what has been released.
 
 \textbf{The cost is a property of how a manuscript is written, not of how it is
 evaluated.} A denominator needs to know which artifact cell each printed number
