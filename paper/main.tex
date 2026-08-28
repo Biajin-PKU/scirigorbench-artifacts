@@ -63,39 +63,26 @@ Affiliation omitted for anonymous review\\
 % ============================================================ provenance map
 % =============================================================== abstract
 \begin{abstract}
-Evaluations of autonomous research agents report scores without error rates, and the
-omission is not cosmetic. On a released corpus where three language models wrote up the
+Evaluations of autonomous research agents report scores without error rates. The omission
+is not cosmetic: on a released corpus where three language models wrote up the
 \emph{same} experiment, a published rubric's Overall score moves through \RM{40\%} of its
-observed range under a writer swap that leaves the experiment fixed, and the axes describing the experiment move
-\RM{four times} further than the axes describing the prose. We ask what supplying the
-missing quantity would take. We introduce \textsc{SciRigorBench}, a construction that binds
-every mechanically checkable claim in an agent's manuscript to a key in its own frozen run,
-plants link-breaking defects uniformly over that universe of bindings, and lets the agent's
-own in-loop adjudicator judge the sealed package; because unplanted bindings are named as
-well, accusations against them form a denominator that an accuse-everything adjudicator
-cannot inflate away, and an exact conditional test controls how often an adjudicator whose
-accusations are exchangeable with the planted set under the draw is certified. What it
-estimates is a detection rate and a false-accusation rate, each with its denominator; the
-$e$-value is the significance guard on them, not a score. We then apply it
-to \RM{58} released runs from \RM{five} external sources across \RM{four}
-independent corpora, and separately to a reference-compliant generator built to test whether
-the requirement is enough. \RM{2} of the \RM{58} released runs clear the recorded
-evaluability floor and \RM{0} can certify under a single planting at any $K$: the largest
-universe any of them yields is $N=\RM{12}$, whose best attainable evidence is \RM{15.2}
-against the \RM{20} a stratum needs. (External arms receive one adjudication each; a
-sequential product across fresh plantings is a different experiment and is not claimed
-here.) That is a statement about their records and not about their
-research: we do not find these agents inaccurate, we find that no error rate --- high or low
---- can be attached to them. What is common across the five sources is not one failure
-mode but one absence: none marks its claims at cell granularity. Where the resulting loss
-lands differs --- on one arm the record is unreadable to our matcher, on another the run
-never recorded the subject, on a third the claims sit in a \LaTeX{} source string the
-extractor cannot parse as cells --- and we show by construction that the marking cannot be
-recovered after the fact, because nothing in an unmarked manuscript identifies which cell a
-number reports except the number itself. The compliant generator, which emits the binding
-at write time, satisfies every check the released arms fail. A process-fidelity certificate
-for a research agent is therefore a property of how runs are recorded, not of how
-manuscripts are scored.
+observed range under a writer swap, and the axes describing the experiment move four times
+further than those describing the prose. We introduce \textsc{SciRigorBench}, which binds
+every mechanically checkable claim in a manuscript to a cell of the agent's own frozen run,
+plants link-breaking defects uniformly over that universe, and lets the agent's in-loop
+adjudicator judge the sealed package. Unplanted bindings supply a denominator an
+accuse-everything adjudicator cannot inflate away. What the construction
+\emph{estimates} is a detection rate and a false-accusation rate, each with its
+denominator; rejecting a stratum when $e\ge 1/\alpha$ \emph{controls} false-certification
+probability at $\alpha$ under the planting design --- the $e$-value is the significance
+guard, not a score. Applied to \RM{58} released runs from \RM{five} sources across
+\RM{four} corpora, \RM{2} clear the evaluability floor and \RM{0} certify under a single
+planting at any $K$: the largest universe is $N=\RM{12}$, whose best attainable evidence
+is \RM{15.2} against the \RM{20} a stratum needs. That is a finding about records, not
+research: none of the five sources marks claims at cell granularity, and a
+reference-compliant generator that emits the binding at write time satisfies every check
+they fail. A process-fidelity certificate is therefore a property of how runs are
+recorded, not of how manuscripts are scored.
 \end{abstract}
 
 % =========================================================== 1 introduction
