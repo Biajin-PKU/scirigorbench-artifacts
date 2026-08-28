@@ -93,6 +93,15 @@ def main():
     # when two arms were appended.
     n_runs = len(allN)
     stale = []
+    # K=0 rows must carry the calibrator floor kappa, not the historical e=1 special case
+    for fname in ("e1_m1_remeasured_k0.json", "e1_m1.json"):
+        d = load(fname)
+        if not d: continue
+        rows = d if isinstance(d, list) else d.get("rows", [])
+        for r in rows:
+            if r.get("K") == 0 and abs(float(r.get("e", 0)) - 0.5) > 1e-9:
+                stale.append(f"{fname} K=0 row has e={r.get('e')}, need kappa=0.5")
+
     e12 = load("e12_floor.json")
     if e12:
         got = sum(e12.get("scoreable_at_floor", {}).get(k, {}).get("2", 0) * 0 or

@@ -20,8 +20,8 @@ The certificate is adopted from the A paper unchanged -- see
 reviewer-cert/data/cert_validation.py.  B contributes the universe, not the test.
 
 Usage:
-    python3 e1.py --contract contracts/substrate-84.json          # M2 only
-    python3 e1.py --contract contracts/substrate-84.json --k 1 2 3 5 --reps 4
+    python3 e1.py --contract contracts/arena-substrate.json          # M2 only
+    python3 e1.py --contract contracts/arena-substrate.json --k 1 2 3 5 --reps 4
 """
 
 import argparse
