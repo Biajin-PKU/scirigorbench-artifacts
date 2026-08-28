@@ -771,6 +771,20 @@ claims are visible without the artifacts, and on it the reader we describe as
 handicapped is not. Nothing about the design prevents that. A single planting
 does not order the two adjudicators, and no claim in this paper may rest on one.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/fig_two_variances.pdf}
+\caption{\textbf{Two variances, and the larger one is not the adjudicator.}
+(a) Re-adjudicating one byte-identical package \RM{6} times leaves every call
+certifying, moving $e$ over a \RM{12.5}-fold range. (b) Redrawing the planted
+set flips the decision: \RM{2} of \RM{5} replicates certify on the same
+substrate against the same model. (c) On that same package the artifact-holding
+and manuscript-only adjudicators are the same instrument (matched $e$-gap
+\RM{1.00}$\times$). Which slots happen to be planted matters more than which
+call adjudicates them.}
+\label{fig:twovariances}
+\end{figure}
+
 That has a consequence for every single-shot certificate in this paper, and it
 is not the consequence we first drew. An earlier revision reported the
 fixed-package result alone and concluded that the binary outcome is robust to
@@ -819,6 +833,18 @@ it fails in the way \S\ref{sec:e5} predicts: the model never invented a key
 did not match the cells it named. Asked to bind claims to cells, a strong reader
 of an unmarked manuscript falls back on matching numerals, which is the
 procedure the acceptance test rules out.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\textwidth]{figures/fig_ceiling.pdf}
+\caption{\textbf{A stronger extractor does not clear the floor either.}
+Per-task bindings from our frame-overlap matcher against a frontier model's
+proposed-and-\emph{verified} bindings on the same ten tasks, with the frozen
+floor ($N{=}10$) and the smallest certifiable universe ($N{=}23$) marked. The
+model never invents a key, but its verified bindings stop below both lines on
+every task.}
+\label{fig:ceiling}
+\end{figure}
 
 \textbf{This is a ceiling, not a pipeline, and it is not reproducible.} One task
 returned \RM{6} verified bindings on one call and \RM{0} on another with the
@@ -911,7 +937,20 @@ resolve a universe at all, and even they resolve one manuscript in seven.}
 \label{tab:arms}
 \end{table}
 
-Table~\ref{tab:arms} is the paper's central measurement: of \RM{58} released
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/fig_arm_breadth.pdf}
+\caption{\textbf{Evaluation breadth, or its absence, across five sources.}
+(a) Universe size $N$ per external arm: every distribution is concentrated at
+zero, and only MLR-Agent and AI Scientist-v1 reach $N\ge 10$. (b) Runs clearing
+each evaluability floor: \RM{32} of \RM{58} clear $N{=}2$, \RM{12} clear
+$N{=}5$, \RM{2} clear the frozen floor \RM{10}, none clear \RM{20}; the
+in-sample development arm clears every floor.}
+\label{fig:breadth}
+\end{figure}
+
+Table~\ref{tab:arms} is the paper's central measurement, and
+Figure~\ref{fig:breadth} renders it as a distribution: of \RM{58} released
 external runs across \RM{five} sources and \RM{four} corpora, \RM{2} clear the
 recorded floor and \RM{0} can certify under a single planting at any $K$
 (\S\ref{sec:floor}). AI Scientist-v2 records its settings only
@@ -930,21 +969,34 @@ listing, and still \RM{0/3}.
 failure.} Splitting every unresolved claim by cause separates arms that our
 instrument cannot read from arms whose run did not record the subject at all:
 
-\begin{center}
-\small
-\begin{tabular}{@{}lrrrrr@{}}
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l rrr rrr rr rr@{}}
 \toprule
-arm & runs & no candidate & ambiguous & parse failure & not recorded \\
- & & & & \footnotesize(runs with keys) & \\
+ & \multicolumn{3}{c}{$N$ distribution} & \multicolumn{3}{c}{runs clearing floor} & \multicolumn{2}{c}{loss is \dots} & \multicolumn{2}{c}{unresolved by cause} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11}
+arm & runs & med.\ $N$ & max $N$ & $\ge$2 & $\ge$5 & $\ge$10 & parse-fail & not-rec & no-cand & ambig \\
 \midrule
-AI Scientist-v2 & \RM{10} & \RM{3}    & \RM{436} & \RM{95.2\%} & \RM{0.0\%} \\
-MLR-Agent       & \RM{30} & \RM{1200} & \RM{838} & \RM{43.4\%} & \RM{54.6\%} \\
-ARA             & \RM{3}  & \RM{59}   & \RM{50}  & \RM{58.8\%} & \RM{100\%} \\
-AI Scientist-v1 & \RM{10} & \RM{541}  & \RM{136} & \RM{9.2\%}  & \RM{90.8\%} \\
-ICML-26 repro   & \RM{5}  & \RM{1793} & \RM{62}  & \RM{45.3\%} & \RM{100\%} \\
+AI Sci.-v2  & \RM{10} & \RM{2} & \RM{5}  & \RM{6}  & \RM{2} & \RM{0} & \RM{95.2\%} & \RM{0.0\%}  & \RM{3}    & \RM{436} \\
+MLR-Agent   & \RM{30} & \RM{3} & \RM{10} & \RM{25} & \RM{9} & \RM{1} & \RM{43.4\%} & \RM{54.6\%} & \RM{1200} & \RM{838} \\
+ARA         & \RM{3}  & \RM{0} & \RM{1}  & \RM{0}  & \RM{0} & \RM{0} & \RM{58.8\%} & \RM{100\%}  & \RM{59}   & \RM{50} \\
+AI Sci.-v1  & \RM{10} & \RM{0} & \RM{12} & \RM{1}  & \RM{1} & \RM{1} & \RM{9.2\%}  & \RM{90.8\%} & \RM{541}  & \RM{136} \\
+ICML-26     & \RM{5}  & \RM{0} & \RM{1}  & \RM{0}  & \RM{0} & \RM{0} & \RM{45.3\%} & \RM{100\%}  & \RM{1793} & \RM{62} \\
+\midrule
+external total & \RM{58} & & \RM{12} & \RM{32} & \RM{12} & \RM{2} & & & & \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{\textbf{Evaluation breadth, or its absence: every external arm, resolved
+to a distribution over $N$ and split by failure cause.} The $N$-distribution
+columns are the recording discipline; the floor columns count runs whose
+universe clears each threshold; ``loss is'' separates the two attribution
+directions of \S\ref{sec:board}, both reported as medians, parse-failure over
+the runs that recorded any key; the cause columns count unresolved claims with
+no candidate and with an ambiguous candidate. Of \RM{58} runs, \RM{2} clear the
+frozen floor and none clear the evidence floor (\S\ref{sec:floor}).}
+\label{tab:broad}
+\end{table}
 
 \noindent The parse-failure column is taken over the runs that recorded any
 artifact key at all, which is not the same as over all runs, and the difference
@@ -957,7 +1009,7 @@ all runs is \RM{0.0\%} and the rate on the runs that could be parsed is
 \S\ref{sec:floor} refuses to read an unscoreable run as a low error rate: an
 empty denominator flatters whoever is holding it.
 
-\noindent The two ends of that table are opposite failures. On AI Scientist-v2
+\noindent The two ends of Table~\ref{tab:broad} are opposite failures. On AI Scientist-v2
 the run does hold something on almost every subject a claim names --- only
 \RM{3} claims find no candidate key at all --- and the loss is ours, which the
 \RM{95.2\%} parse failure states directly. On ARA the run records almost
@@ -1004,6 +1056,17 @@ sweep it. The count moves: \RM{32} of \RM{58} external runs clear a floor of
 not matter. What defends it is the freeze --- the floor was fixed before any
 external arm was run and the manifest timestamps it --- and the derivation
 below, which says the value we froze was the wrong one.
+Figure~\ref{fig:floorheatmap} shows where each arm drops out as the floor rises.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\textwidth]{figures/fig_floor_heatmap.pdf}
+\caption{\textbf{Where each external arm drops out as the floor rises.} Cell
+values count runs clearing each evaluability floor, colored by the fraction of
+that arm's runs. The two arms with cell-level claim identity survive to
+$N{=}10$; every arm is empty by $N{=}20$.}
+\label{fig:floorheatmap}
+\end{figure}
 
 \begin{center}
 \small
@@ -1030,6 +1093,17 @@ produce a certificate even against a perfect adjudicator}. $K=\RM{1}$ is the
 worst case: $e^{\max}=\kappa\sqrt{N}$ there, so it needs $N\ge\RM{1600}$ ---
 finite, and two orders of magnitude beyond anything released. The smallest universe that can
 certify at $K=\RM{3}$ is $N=\RM{23}$.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.76\textwidth]{figures/fig_attainable_ceiling.pdf}
+\caption{\textbf{The attainable-evidence ceiling makes the frozen floor
+undefendable.} $e^{\max}=\kappa\binom{N}{K}^{1-\kappa}$ for each universe size
+and planting budget; a cell is boxed where it reaches the $1/\alpha=\RM{20}$
+threshold. The largest external universe ($N{=}12$) never clears it at any $K$;
+the development arm ($N{=}159$) clears it at every $K\ge 2$.}
+\label{fig:attainable}
+\end{figure}
 
 \textbf{So the external count is \RM{0}, not \RM{2}.} The two runs that
 clear the recorded floor clear a floor set below the point where evidence
@@ -2131,7 +2205,7 @@ hypothetical.
 
 \section*{CRediT authorship contribution statement}
 
-\textbf{Anonymous Author:} Conceptualization, Methodology, Software, Formal
+\textbf{Jiabin Zheng:} Conceptualization, Methodology, Software, Formal
 analysis, Investigation, Data curation, Writing -- original draft, Writing --
 review \& editing.
 
